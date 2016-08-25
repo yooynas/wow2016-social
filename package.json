@@ -1,0 +1,26 @@
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "bootable": "0.2.x",
+    "bootable-environment": "0.2.x",
+    "cfenv": "^1.0.3",
+    "chart.js": "^2.2.1",
+    "cloudant": "^1.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-powered-by": "0.1.x",
+    "ejs": "0.8.x",
+    "express": "3.x.x",
+    "fs-sync": "^1.0.2",
+    "locomotive": "0.4.x",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "promise": "^7.1.1",
+    "properties-parser": "^0.3.1",
+    "request": "^2.74.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
