@@ -3,9 +3,23 @@ var locomotive = require('locomotive')
 
 var pagesController = new Controller();
 
-pagesController.main = function() {
-  this.title = 'Locomotive';
+pagesController.dashboard = function() {
+  this.title = 'Watson Social CRM Dashboard';
   this.render();
 }
+
+pagesController.chat = function() {
+  this.title = 'Watson Social CRM Dashboard';
+  this.render();
+}
+
+pagesController.before('*', function(next) {
+	if(!this.req.isAuthenticated()){
+    	this.redirect('/login');
+  	} else {
+      	console.log('Session Expires in ' + this.req.session.cookie.maxAge / 1000 / 60 + ' minutes');
+  		next();
+  	}
+});
 
 module.exports = pagesController;

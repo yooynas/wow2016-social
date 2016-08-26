@@ -1,0 +1,22 @@
+{
+  "name": "wow2016-social",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "wjvanzyl <wjvanzyl@us.ibm.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wernervz/wow2016-social",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery-validation": "jquery-validate#^1.15.1",
+    "bootstrap-table": "^1.11.0"
+  }
+}

@@ -12,7 +12,7 @@ var Controller = locomotive.Controller;
 var AuthController = new Controller();
 
 AuthController.login = function() {
-  this.title = 'Watson Claims Ecosystem';
+  this.title = 'Watson Social CRM Dashboard';
   // Use the <%=message%> tag on the login page to display the flash message
   this.message = '';
   if (this.req.flash) {

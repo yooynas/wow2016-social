@@ -6,5 +6,14 @@
 // Guide on [routing](http://locomotivejs.org/guide/routing.html) for additional
 // information.
 module.exports = function routes() {
-  this.root('pages#main');
+  this.root('pages#dashboard');
+
+  this.match('/chat', 'pages#chat');
+
+  this.match('/api/classification', 'api#classification');
+  this.match('/api/sentiment', 'api#sentiment');
+
+  this.match('/login', 'auth#login');
+  this.match('/logout', 'auth#logout');
+  this.match('/authenticate', 'auth#authenticate', { via : 'post' });
 }

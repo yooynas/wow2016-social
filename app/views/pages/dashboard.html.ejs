@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="stylesheets/custom.css">
+      <script src="/jquery/dist/jquery.min.js"></script>
+   </head>
+   <body>
+     <% include partials/nav %>
+      <div class="container-fluid">
+         <div class="row content">
+           <% include partials/left-nav %>
+            <div class="col-sm-9">
+               <div class="well">
+                  <h4><%=title%></h4>
+                  <p>Watson Social CRM Dashboard built using Node.js, jQuery, Bootstrap and Chart.js libraries.</p>
+               </div>
+               <div class="row">
+                  <div class="col-sm-8">
+                     <div class="well">
+                        <h4>Classifications</h4>
+                        <canvas id="classification-chart" height="210px"></canvas>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="well">
+                        <h4>Sentiment Summary</h4>
+                        <p>Chart will go here...</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/bootstrap-table/dist/bootstrap-table.min.js"></script>
+      <script src="/chart.js/dist/Chart.js"></script>
+      <script src="/js/dashboard.js"></script>
+      <script>
+      $(document).ready(function() {
+        var classification_chart;
+        $.getJSON('/api/classification', function(data) {
+          classification_chart = $('#classification-chart').initClassificationChart(data);
+        });
+      });
+      </script>
+   </body>
+</html>
