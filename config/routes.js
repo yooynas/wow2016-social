@@ -10,6 +10,7 @@ module.exports = function routes() {
 
   this.match('/chat', 'pages#chat');
 
+  this.match('/api/web/conversation', 'api#web_conversation', { via : "post"} );
   this.match('/api/classification', 'api#classification');
   this.match('/api/sentiment', 'api#sentiment');
 

@@ -36,9 +36,12 @@
       <script src="/js/chat.js"></script>
       <script>
       $(document).ready(function() {
-        $('#chat-container').initChatContainer({
+        var chat = $('#chat-container').initChatContainer({
           add_passage_callback : function(msg) {
-            console.log(msg);
+            var url = 'api/web/conversation';
+            $.post(url, { text : msg }, function(data) {
+                chat.addPassageRight(data.output.text);
+            });
           }
         });
       });
