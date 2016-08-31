@@ -1,8 +1,15 @@
-var locomotive = require('locomotive')
-  , Controller = locomotive.Controller;
+/*
+ * IBM Confidential
+ * OCO Source Materials
+ * (C) Copyright IBM Corp. 2015, 2016
+ * The source code for this program is not published or otherwise divested of its trade secrets, irrespective of what has been deposited with the U.S. Copyright Office.
+ */
+var locomotive = require('locomotive');
 var Promise = require('promise');
 var Request = require('request');
+var cloudant = require('cloudant');
 
+var Controller = locomotive.Controller;
 var apiController = new Controller();
 
 apiController.webConversation = function() {
@@ -23,22 +30,69 @@ apiController.webConversation = function() {
     });
 }
 
+apiController.socialData = function() {
+  var that = this;
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'created-at-view',
+    limit : 10,
+    skip : 0,
+    include_docs : true
+  };
+
+  readDataFromViewPromise(db_request).then(function(data) {
+    var response = {
+      total : data.total_rows,
+      rows : []
+    }
+    for (var i=0; i<data.length; i++) {
+      var item = data[i];
+      response.rows.push(item.doc);
+    }
+
+    that.res.status(200).json(response);
+  }, function(err) {
+    that.res.status(500).json(err);
+  });
+
+}
+
+apiController.emotionalTone = function() {
+  var that = this;
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'emotional-tone-view'
+  };
+
+  groupDataFromViewPromise(db_request).then(function(data) {
+    console.log(data);
+    var response = {
+      keys : [],
+      values : []
+    }
+    data.forEach(function(set) {
+      response.keys.push(set.key);
+      response.values.push(set.value);
+    });
+    that.res.status(200).send(response);
+  });
+}
+
 apiController.classification = function() {
-  this.res.status(200).json(
-    [
-      {
-        key : "MARKETING",
-        value: 2400
-      },
-      {
-        key: "FEEDBACK",
-        value: 5001
-      },
-      {
-        key: "QUESTION",
-        value: 1134
-      }
-    ]);
+  var that = this;
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'classification-view'
+  };
+  groupDataFromViewPromise(db_request).then(function(data) {
+      that.res.status(200).json(data);
+  });
 }
 
 apiController.sentiment = function() {
@@ -55,6 +109,66 @@ apiController.sentiment = function() {
   });
 }
 
+function groupDataFromViewPromise(db_request) {
+
+	return new Promise(function(fulfill, reject) {
+		try {
+			var read_start = new Date();
+			var params = { group : true }
+			db_request.db_connection.view(db_request.db_design, db_request.db_view , params, function(err, result) {
+				var read_end = new Date();
+				var elapsed = (read_end.getTime() - read_start.getTime()) / 1000;
+				if (err) {
+					console.log(new Date().toISOString() + ' Error reading data from DB ' + err);
+					reject(err);
+				} else {
+					console.log(new Date().toISOString() + ' Read ' + result.rows.length + ' docs in ' + elapsed + ' seconds');
+					fulfill(result.rows);
+				}
+			});
+
+		} catch (err) {
+			console.log(err);
+			reject(err);
+		}
+	});
+}
+
+function readDataFromViewPromise(db_request) {
+
+	return new Promise(function(fulfill, reject) {
+		try {
+			var read_start = new Date();
+			var params = { reduce: false, limit: db_request.limit, skip: db_request.skip, descending: false, include_docs : db_request.include_docs };
+			if (db_request.start_key) {
+				params.startkey = db_request.start_key;
+			}
+			if (db_request.end_key) {
+				params.endkey = db_request.end_key;
+			}
+			if (db_request.start_key) {
+				if (!db_request.end_key) {
+					params.key = db_request.start_key;
+				}
+			}
+			db_request.db_connection.view(db_request.db_design, db_request.db_view , params, function(err, result) {
+				var read_end = new Date();
+				var elapsed = (read_end.getTime() - read_start.getTime()) / 1000;
+				if (err) {
+					console.log(new Date().toISOString() + ' Error reading data from DB ' + err);
+					reject(err);
+				} else {
+					console.log(new Date().toISOString() + ' Read ' + result.rows.length + ' docs in ' + elapsed + ' seconds');
+					fulfill(result.rows);
+				}
+			});
+
+		} catch (err) {
+			console.log(err);
+			reject(err);
+		}
+	});
+}
 
 function callNodeRedWebConversation(text, user_id) {
   return new Promise(function(fulfill, reject) {

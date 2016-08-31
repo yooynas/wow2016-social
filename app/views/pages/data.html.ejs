@@ -22,6 +22,7 @@
                <div class="row">
                   <div class="col-sm-12">
                      <div class="well">
+                       <table id="data-table"></table>
                      </div>
                   </div>
                </div>
@@ -34,6 +35,24 @@
       <script src="/js/data.js"></script>
       <script>
       $(document).ready(function() {
+        var $table = $('#data-table').bootstrapTable({
+          url: '/api/socialdata',
+          pagination : true,
+          sidePagination: 'server',
+          columns: [{
+                field: 'text',
+                title: 'Text'
+            }, {
+                field: 'source_id',
+                title: 'From'
+            }, {
+                field: 'created_at',
+                title: 'When'
+            },{
+                field: 'source_system',
+                title: 'Source'
+            }]
+        });
       });
       </script>
    </body>

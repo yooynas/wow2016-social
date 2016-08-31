@@ -54,6 +54,39 @@
           }
         });
 
+      },
+      initEmotionalToneChart : function(data) {
+        var ctx = this.get(0).getContext("2d");
+        var config = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: data.values,
+                    backgroundColor: [
+                        '#2C3E50',
+                        '#3498DB'
+                    ]
+                }],
+                labels: data.keys
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: false,
+                    text: 'Allocated To Watson',
+                    fontColor : '#708090',
+                    fontSize: 14
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        }
+        return new Chart(ctx, config);
       }
   });
 })(jQuery);

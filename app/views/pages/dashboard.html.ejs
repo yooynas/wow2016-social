@@ -14,21 +14,28 @@
       <div class="container-fluid">
          <div class="row content">
            <% include partials/left-nav %>
-            <div class="col-sm-9">
+            <div class="col-sm-10">
                <div class="well">
                   <h4><%=title%></h4>
                   <p>Watson Social CRM Dashboard built using Node.js, jQuery, Bootstrap and Chart.js libraries.</p>
                </div>
                <div class="row">
-                  <div class="col-sm-8">
+                  <div class="col-sm-7">
                      <div class="well">
-                        <canvas id="classification-chart" height="210px"></canvas>
+                        <canvas id="classification-chart" height="180px"></canvas>
                      </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-5">
                      <div class="well">
-                        <h4>Tone Summary</h4>
-                        <p>Chart will go here...</p>
+                        <h4>Emotional Tone Summary</h4>
+                        <canvas id="emotional-tone-chart" height="210px"></canvas>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="well">
+                        <canvas id="emotional-tone-overtime-chart" height="180px"></canvas>
                      </div>
                   </div>
                </div>
@@ -44,6 +51,12 @@
         var classification_chart;
         $.getJSON('/api/classification', function(data) {
           classification_chart = $('#classification-chart').initClassificationChart(data);
+        });
+        $.getJSON('/api/emotionaltone', function(data) {
+          classification_chart = $('#emotional-tone-chart').initEmotionalToneChart(data);
+        });
+        $.getJSON('/api/emotionaltoneovertime', function(data) {
+          classification_chart = $('#emotional-tone-overtime-chart').initEmotionalToneOverTimeChart(data);
         });
       });
       </script>
