@@ -1,0 +1,20 @@
+{
+  "_id": "_design/wow-conversation",
+  "views": {
+    "conversation-id-view": {
+      "reduce": "_count",
+      "map": "function (doc) {\n  emit(doc.tweet.id, 1);\n}"
+    }
+  },
+  "language": "javascript",
+  "indexes": {
+    "tweet-id-search": {
+      "analyzer": "standard",
+      "index": "function (doc) {\n  index(\"id\", doc.id, {\"store\": true});\n}"
+    },
+    "screen-name-search": {
+      "analyzer": "standard",
+      "index": "function (doc) {\n  index(\"screen_name\", doc.screen_name);\n}"
+    }
+  }
+}

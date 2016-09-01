@@ -32,23 +32,31 @@ apiController.webConversation = function() {
 
 apiController.socialData = function() {
   var that = this;
+  // Get the paging params from the request
+  var limit = this.req.query.limit;
+  var skip = this.req.query.offset;
+
   var incoming = global['wow-incomingDB'];
+
   var db_request = {
     db_connection : incoming,
     db_design : 'wow-incoming',
     db_view : 'created-at-view',
-    limit : 10,
-    skip : 0,
+    limit : limit,
+    skip : skip,
     include_docs : true
   };
 
   readDataFromViewPromise(db_request).then(function(data) {
+    console.log(data);
+
     var response = {
       total : data.total_rows,
       rows : []
     }
-    for (var i=0; i<data.length; i++) {
-      var item = data[i];
+
+    for (var i=0; i<data.rows.length; i++) {
+      var item = data.rows[i];
       response.rows.push(item.doc);
     }
 
@@ -69,7 +77,6 @@ apiController.emotionalTone = function() {
   };
 
   groupDataFromViewPromise(db_request).then(function(data) {
-    console.log(data);
     var response = {
       keys : [],
       values : []
@@ -187,7 +194,7 @@ function readDataFromViewPromise(db_request) {
 					reject(err);
 				} else {
 					console.log(new Date().toISOString() + ' Read ' + result.rows.length + ' docs in ' + elapsed + ' seconds');
-					fulfill(result.rows);
+					fulfill(result);
 				}
 			});
 
