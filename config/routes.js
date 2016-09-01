@@ -16,6 +16,7 @@ module.exports = function routes() {
 
   this.match('/api/classification', 'api#classification');
   this.match('/api/emotionaltone', 'api#emotional_tone');
+  this.match('/api/emotionaltoneovertime', 'api#emotional_tone_over_time');
 
   this.match('/login', 'auth#login');
   this.match('/logout', 'auth#logout');

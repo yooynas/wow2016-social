@@ -87,6 +87,74 @@
             }
         }
         return new Chart(ctx, config);
+      },
+      initEmotionalToneOverTimeChart : function(data) {
+        var ctx = this.get(0).getContext("2d");
+        var emotions = ['joy', 'anger', 'disgust', 'fear', 'sadness'];
+        var colors = ['rgb(22, 168, 143)','rgb(230,0,0)','rgb(70,149,252)','rgb(245,64,213)','rgb(104,233,229)'];
+
+        var datasets = [];
+        var labels = data.labels;
+
+        for (var i=0; i<emotions.length; i++) {
+          var e = emotions[i];
+          if (data[e]) {
+            var d = {
+              label : e,
+              backgroundColor : colors[i],
+              data : data[e].data,
+              fill: false,
+              pointBorderWidth : 1
+            }
+            datasets.push(d);
+          }
+        }
+
+        var config = {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                title:{
+                    display:false,
+                    text:'',
+                    fontColor : '#708090',
+                    fontSize: 14
+                },
+                tooltips: {
+                    mode: 'label'
+                },
+                hover: {
+                    mode: 'dataset'
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            show: true,
+                            labelString: 'Month'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            show: true,
+                            labelString: 'Value'
+                        },
+                        ticks: {
+                            suggestedMin: 1,
+                            suggestedMax: 250,
+                        }
+                    }]
+                }
+            }
+
+        };
+
+        return new Chart(ctx, config);
       }
   });
 })(jQuery);

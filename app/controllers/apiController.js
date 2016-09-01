@@ -79,6 +79,8 @@ apiController.emotionalTone = function() {
       response.values.push(set.value);
     });
     that.res.status(200).send(response);
+  }, function(err) {
+    that.res.status(500).json(err);
   });
 }
 
@@ -92,20 +94,46 @@ apiController.classification = function() {
   };
   groupDataFromViewPromise(db_request).then(function(data) {
       that.res.status(200).json(data);
+  }, function(err) {
+    that.res.status(500).json(err);
   });
 }
 
-apiController.sentiment = function() {
-  this.res.status(200).send({
-    "positive" : {
-      "value" : 50
-    },
-    "neutrol" : {
-      "value": 25
-    },
-    "negative" : {
-      "value" : 25
+apiController.emotionalToneOverTime = function() {
+  var that = this;
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'emotional-tone-overtime-view'
+  };
+  groupDataFromViewPromise(db_request).then(function(data) {
+    try {
+      var rows = data;
+      var response = {};
+      var dates = [];
+      for (var i=0; i<rows.length; i++) {
+        var date_str = rows[i].key[2] + '/' + (Number(rows[i].key[1]) + 1);
+        if (dates.indexOf(date_str) < 0) {
+          dates.unshift(date_str);
+        }
+        var tone = rows[i].key[3];
+        if (!response[tone]) {
+          var val = {
+            data : [rows[i].value]
+          }
+          response[tone] = val;
+        } else {
+          response[tone].data.unshift(rows[i].value);
+        }
+      }
+      response.labels = dates;
+      that.res.status(200).json(response);
+    } catch (err) {
+      that.res.send(err);
     }
+  }, function(err) {
+    that.res.status(500).json(err);
   });
 }
 
