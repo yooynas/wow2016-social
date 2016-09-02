@@ -51,8 +51,8 @@
         var chat = $('#chat-container').initChatContainer({
           add_passage_callback : function(msg) {
             var url = 'api/web/conversation';
-            $.post(url, { text : msg }, function(data) {
-                chat.addPassageRight(data.output.text);
+            $.post(url, { text : msg }, function(msg) {
+                chat.addPassageRight(msg);
             });
           }
         });

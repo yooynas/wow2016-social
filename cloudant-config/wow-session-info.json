@@ -1,0 +1,11 @@
+{
+  "_id": "_design/wow-session-info",
+  "views": {},
+  "language": "javascript",
+  "indexes": {
+    "session_id_idx": {
+      "analyzer": "standard",
+      "index": "function (doc) {\n  index(\"session_id\", doc.session_id);\n}"
+    }
+  }
+}

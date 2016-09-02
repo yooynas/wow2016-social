@@ -23,11 +23,30 @@ apiController.webConversation = function() {
     }
 
     callNodeRedWebConversation(text, user_id).then(function(response) {
-      that.res.status(200).json(response);
+      console.log(JSON.stringify(response));
+      var intent = response.intents[0];
+      var entity = response.entities[0];
+      if (intent && entity) {
+        findSessionInfo(entity.value).then(function(session_info) {
+            that.res.status(200).json(session_info.what);
+        });
+      }
     }, function(err) {
       console.log(err);
       that.res.send(500).json(err);
     });
+}
+
+apiController.findSessionInfo = function() {
+  var that = this;
+  var session_id = this.req.query.session_id;
+
+  findSessionInfo(session_id).then(function(doc) {
+    that.res.json(doc);
+  }, function(err) {
+    that.res.status(500).send(err);
+  });
+
 }
 
 apiController.socialData = function() {
@@ -144,6 +163,43 @@ apiController.emotionalToneOverTime = function() {
   });
 }
 
+function findSessionInfo(session_id) {
+  var session_info = global['wow-session-infoDB'];
+
+  return new Promise(function(fulfill, reject) {
+    var db_request = {
+      db_connection : session_info,
+      db_design : 'wow-session-info',
+      db_view : 'session_id_idx',
+      query : { q: 'session_id:\"' + session_id + '\"', include_docs : true }
+    };
+
+    findDocByQueryIndex(db_request).then(function(data) {
+      fulfill(data.rows[0].doc);
+    }, function(err) {
+      reject(err);
+    });
+  });
+
+}
+
+function findDocByQueryIndex(db_request) {
+  return new Promise(function(fulfill, reject) {
+		try {
+      db_request.db_connection.search(db_request.db_design, db_request.db_view, db_request.query, function(err, result) {
+        if (err) {
+          reject(err);
+        } else {
+          fulfill(result);
+        }
+      });
+    } catch (err) {
+      console.log(err);
+      reject(err);
+    }
+  });
+}
+
 function groupDataFromViewPromise(db_request) {
 
 	return new Promise(function(fulfill, reject) {
@@ -226,6 +282,7 @@ function callNodeRedWebConversation(text, user_id) {
 					} else {
 						if (response.statusCode == 200) {
 							var result = JSON.parse(body);
+              console.log(result);
 							fulfill(result);
 						} else {
 							var err = {"error" : 'HTTP Status code : ' + response.statusCode };

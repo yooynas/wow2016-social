@@ -30,4 +30,13 @@ module.exports = function() {
 		console.log('******** Error connecting to wow-incoming : ' + err);
 	});
 
+	CloudantUtils.checkDB(cloudant, 'wow-session-info').then(function(db_connection) {
+		console.log('Successfully connected to wow-session-info');
+		global['wow-session-infoDB'] = db_connection;
+		CloudantUtils.checkDesignDoc(db_connection, "wow-session-info", "./cloudant-config/wow-session-info").then(function() {
+			console.log('Successfully checked the wow-session-info db design docs');
+		});
+	}, function(err) {
+		console.log('******** Error connecting to wow-session-info : ' + err);
+	});
 }
