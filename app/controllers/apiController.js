@@ -206,9 +206,10 @@ function readDataFromViewPromise(db_request) {
 }
 
 function callNodeRedWebConversation(text, user_id) {
+  var nr_url = global.app_params['node-red-instance-url'];
   return new Promise(function(fulfill, reject) {
 		try {
-      var url = 'https://wow-2016-social.mybluemix.net/web/conversation';
+      var url = nr_url + '/web/conversation';
       var data = {
         text: text,
         user_id : user_id

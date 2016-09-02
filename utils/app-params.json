@@ -1,0 +1,4 @@
+{
+  "cloudant-service-name" : "wow-2016-social-cloudantNoSQLDB",
+  "node-red-instance-url" : "https://wow-2016-social.mybluemix.net"
+}
