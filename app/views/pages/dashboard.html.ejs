@@ -33,12 +33,11 @@
                      <div class="row">
                         <div class="col-sm-7">
                            <div class="well">
-                              <canvas id="classification-chart" height="180px"></canvas>
+                              <canvas id="sentiment-chart" height="180px"></canvas>
                            </div>
                         </div>
                         <div class="col-sm-5">
                            <div class="well">
-                              <h4>Emotional Tone Summary</h4>
                               <canvas id="emotional-tone-chart" height="210px"></canvas>
                            </div>
                         </div>
@@ -63,8 +62,8 @@
       <script>
       $(document).ready(function() {
         var classification_chart;
-        $.getJSON('/api/classification', function(data) {
-          classification_chart = $('#classification-chart').initClassificationChart(data);
+        $.getJSON('/api/sentiment', function(data) {
+          sentiment_chart = $('#sentiment-chart').initSentimentChart(data);
         });
         $.getJSON('/api/emotionaltone', function(data) {
           classification_chart = $('#emotional-tone-chart').initEmotionalToneChart(data);

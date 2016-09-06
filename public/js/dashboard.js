@@ -6,22 +6,35 @@
  */
 (function($) {
 
+  var colors = ['#16a88f','#e60000','#4695fc','#f540d5','#68e9e5'];
+  var emotions_hash = {
+    anger: "Anger",
+    fear: "Fear",
+    joy : "Joy",
+    sadness : "Sadness",
+    disgust : "Disgust"
+  }
+  var sentiment_hash = {
+    positive : "Positive",
+    neutral : "Neutral",
+    negative : "Negative"
+  }
+
   $.fn.extend({
-      initClassificationChart: function(data) {
+      initSentimentChart: function(data) {
         var ctx = this.get(0).getContext("2d");
         var labels = [];
-        var items = [];
-        $.each(data, function(idx, item) {
-          labels.push(item.key);
-          items.push(item.value);
+        data.keys.forEach(function(s) {
+          labels.push(sentiment_hash[s]);
         });
+        var items = data.values;
         var bar_chart_data = {
             labels: labels,
             datasets: [{
-                label: 'Classifications',
-                backgroundColor : '#2C3E50',
-                fillColor: '#2C3E50',
-                strokeColor: '#2C3E50',
+                label: 'Emotional',
+                backgroundColor : '#16a88f',
+                fillColor: '#16a88f',
+                strokeColor: '#16a88f',
                 data: items
             }]
         };
@@ -47,7 +60,7 @@
               },
               title: {
                   display: true,
-                  text: 'Classification of Social Data',
+                  text: 'Overall Social Sentiment',
                   fontColor : '#2C3E50',
                   fontSize: 14
               }
@@ -57,17 +70,19 @@
       },
       initEmotionalToneChart : function(data) {
         var ctx = this.get(0).getContext("2d");
+
+        var labels = [];
+        data.keys.forEach(function(e) {
+          labels.push(emotions_hash[e]);
+        });
         var config = {
             type: 'doughnut',
             data: {
                 datasets: [{
                     data: data.values,
-                    backgroundColor: [
-                        '#2C3E50',
-                        '#3498DB'
-                    ]
+                    backgroundColor: colors
                 }],
-                labels: data.keys
+                labels: labels
             },
             options: {
                 responsive: true,
@@ -75,9 +90,9 @@
                     position: 'top',
                 },
                 title: {
-                    display: false,
-                    text: 'Allocated To Watson',
-                    fontColor : '#708090',
+                    display: true,
+                    text: 'Overall Social Tone',
+                    fontColor : '#2C3E50',
                     fontSize: 14
                 },
                 animation: {
@@ -91,7 +106,6 @@
       initEmotionalToneOverTimeChart : function(data) {
         var ctx = this.get(0).getContext("2d");
         var emotions = ['joy', 'anger', 'disgust', 'fear', 'sadness'];
-        var colors = ['rgb(22, 168, 143)','rgb(230,0,0)','rgb(70,149,252)','rgb(245,64,213)','rgb(104,233,229)'];
 
         var datasets = [];
         var labels = data.labels;
@@ -100,7 +114,7 @@
           var e = emotions[i];
           if (data[e]) {
             var d = {
-              label : e,
+              label : emotions_hash[e],
               backgroundColor : colors[i],
               data : data[e].data,
               fill: false,
@@ -109,7 +123,6 @@
             datasets.push(d);
           }
         }
-
         var config = {
             type: 'line',
             data: {
@@ -119,9 +132,9 @@
             options: {
                 responsive: true,
                 title:{
-                    display:false,
-                    text:'',
-                    fontColor : '#708090',
+                    display:true,
+                    text:'Social Tone over Time',
+                    fontColor : '#2C3E50',
                     fontSize: 14
                 },
                 tooltips: {

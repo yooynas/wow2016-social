@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Bootstrap Example</title>
+      <title><%=title%></title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
@@ -47,24 +47,7 @@
       <script src="/js/data.js"></script>
       <script>
       $(document).ready(function() {
-        var $table = $('#data-table').bootstrapTable({
-          url: '/api/socialdata',
-          pagination : true,
-          sidePagination: 'server',
-          columns: [{
-                field: 'text',
-                title: 'Text'
-            }, {
-                field: 'source_id',
-                title: 'From'
-            }, {
-                field: 'created_at',
-                title: 'When'
-            },{
-                field: 'source_system',
-                title: 'Source'
-            }]
-        });
+        $(document).initDataTable();
       });
       </script>
    </body>

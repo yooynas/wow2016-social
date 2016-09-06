@@ -12,6 +12,8 @@ var cloudant = require('cloudant');
 var Controller = locomotive.Controller;
 var apiController = new Controller();
 
+var my_nodered_endpoint = "";
+
 apiController.webConversation = function() {
     var that = this;
     var text = this.req.body.text;
@@ -23,7 +25,6 @@ apiController.webConversation = function() {
     }
 
     callNodeRedWebConversation(text, user_id).then(function(response) {
-      console.log(JSON.stringify(response));
       var intent = response.intents[0];
       var entity = response.entities[0];
       if (intent && entity) {
@@ -86,6 +87,30 @@ apiController.socialData = function() {
 
 }
 
+apiController.sentiment = function() {
+  var that = this;
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'sentiment-view'
+  };
+
+  groupDataFromViewPromise(db_request).then(function(data) {
+    var response = {
+      keys : [],
+      values : []
+    }
+    data.forEach(function(set) {
+      response.keys.push(set.key);
+      response.values.push(set.value);
+    });
+    that.res.status(200).send(response);
+  }, function(err) {
+    that.res.status(500).json(err);
+  });
+}
+
 apiController.emotionalTone = function() {
   var that = this;
   var incoming = global['wow-incomingDB'];
@@ -105,21 +130,6 @@ apiController.emotionalTone = function() {
       response.values.push(set.value);
     });
     that.res.status(200).send(response);
-  }, function(err) {
-    that.res.status(500).json(err);
-  });
-}
-
-apiController.classification = function() {
-  var that = this;
-  var incoming = global['wow-incomingDB'];
-  var db_request = {
-    db_connection : incoming,
-    db_design : 'wow-incoming',
-    db_view : 'classification-view'
-  };
-  groupDataFromViewPromise(db_request).then(function(data) {
-      that.res.status(200).json(data);
   }, function(err) {
     that.res.status(500).json(err);
   });
@@ -161,6 +171,24 @@ apiController.emotionalToneOverTime = function() {
   }, function(err) {
     that.res.status(500).json(err);
   });
+}
+
+apiController.deleteIncoming = function() {
+    var that = this;
+    var _id = this.req.query._id;
+    var _rev = this.req.query._rev;
+
+    var incoming = global['wow-incomingDB'];
+
+    incoming.destroy(_id, _rev, function(err, result) {
+      console.log(err);
+      console.log(result);
+      if (err) {
+        that.res.status(500).send(err);
+      } else {
+        that.res.status(200).send(result);
+      }
+    });
 }
 
 function findSessionInfo(session_id) {
