@@ -25,29 +25,31 @@ apiController.webConversation = function() {
     }
 
     callNodeRedWebConversation(text, user_id).then(function(response) {
-      var intent = response.intents[0];
+      var intent = response.intents[0].intent;
       var entity = response.entities[0];
+
+      console.log(intent + ' ' + JSON.stringify(entity));
+
       if (intent && entity) {
         findSessionInfo(entity.value).then(function(session_info) {
-            that.res.status(200).json(session_info.what);
+          console.log(session_info);
+          if (intent === 'WHAT') {
+            that.res.status(200).json(session_info.Title);
+          }
+          if (intent === 'WHERE') {
+            that.res.status(200).json('Room ' + session_info.Room);
+          }
+          if (intent === 'WHEN') {
+            that.res.status(200).json(session_info.Day + ' in the ' + session_info.Time);
+          }
         });
+      } else {
+        that.res.status(200).send('I\m sorry, but the information you provided wasn\'t found in the system');
       }
     }, function(err) {
-      console.log(err);
-      that.res.send(500).json(err);
+      console.log('ERROR: ' + err);
+      that.res.send(200).json(err);
     });
-}
-
-apiController.findSessionInfo = function() {
-  var that = this;
-  var session_id = this.req.query.session_id;
-
-  findSessionInfo(session_id).then(function(doc) {
-    that.res.json(doc);
-  }, function(err) {
-    that.res.status(500).send(err);
-  });
-
 }
 
 apiController.socialData = function() {
@@ -199,7 +201,7 @@ function findSessionInfo(session_id) {
       db_connection : session_info,
       db_design : 'wow-session-info',
       db_view : 'session_id_idx',
-      query : { q: 'session_id:\"' + session_id + '\"', include_docs : true }
+      query : { q: 'session_id:' + session_id, include_docs : true }
     };
 
     findDocByQueryIndex(db_request).then(function(data) {

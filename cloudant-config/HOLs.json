@@ -1,0 +1,1120 @@
+{
+  "docs": [
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1053,
+      "Title": "Weathering the Storm: A Technical Deep Dive Into How to Get (and Use!) Weather Data",
+      "Abstract": "You know the impact and value weather data has on your business. But, there are so many weather data sources. And when you find the trusted source, how do get the data? more important, how do you use it? Getting trusted weather data can be easy (or difficult) depending on the type of weather data. Be ready for the storm. Come get hands-on expertise on accessing and using weather data alongside your own data. You will learn how to pull historical weather point data elements (temperature, wind speeds, gusts, humidity, etc.) and how to merge it with your own data for analytics. You will also learn about advanced techniques to get and manipulate weather radar / satellite data and visualize it through mapping platforms such as Mapbox.",
+      "Room": 9,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1053,
+      "Title": "Weathering the Storm: A Technical Deep Dive Into How to Get (and Use!) Weather Data",
+      "Abstract": "You know the impact and value weather data has on your business. But, there are so many weather data sources. And when you find the trusted source, how do get the data? more important, how do you use it? Getting trusted weather data can be easy (or difficult) depending on the type of weather data. Be ready for the storm. Come get hands-on expertise on accessing and using weather data alongside your own data. You will learn how to pull historical weather point data elements (temperature, wind speeds, gusts, humidity, etc.) and how to merge it with your own data for analytics. You will also learn about advanced techniques to get and manipulate weather radar / satellite data and visualize it through mapping platforms such as Mapbox.",
+      "Room": 9,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1118,
+      "Title": "Into the Storm: Extracting Weather Data and Putting it to Use for Your business",
+      "Abstract": "Weather is one of the largest influencing factors on the way you run your business. You work to harness value from weather data and use it to drive your organization�s success. But there can still be so many questions. Who can you trust for your data? And furthermore, once you have it �how can it be used for decision-making?    Be ready for the storm. Join us to get a hands-on experience, accessing and incorporating weather data into your analytic operations. You will learn how to extract weather data (e.g. temperature, wind speeds, precipitation) using The Weather Company API's. You will also learn how to perform advanced analytics without needing to have advanced statistical knowledge using Watson Analytics.",
+      "Room": 9,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 1133,
+      "Title": "Advanced Watson App development using Node-RED",
+      "Abstract": "An advanced lab using Watson and Node-RED to wire together hardware devices, APIs and online services in new and interesting ways. This session is designed for developers with an understanding of Node-RED and the Watson APIs and kits. Node-RED is a rapidly growing prototyping technology, that can help you to build sophisticated Watson application flows in minutes which be converted into high quality, robust web applications. We will include details of how you can customize Node-RED to add your own nodes and integrate them into your app. We will utilize the materials created in our September residency and use multiple Nodes you will create an app.",
+      "Room": 14,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "IT infrastructure",
+      "Session": 1140,
+      "Title": "HOL - Deploy & Explore IT Analytics Use Cases with IBM Capacity Management Analytics",
+      "Abstract": "The IBM Capacity Management Analytics (CMA) is an end to end IT analytics platform solution for the datacenter that helps customers understand current state, predict future growth and perform gap analysis on various \"what-if\" scenarios -- and then take what you have learned to better handle business model dynamics, reduce surprises, manage the economic performance of IT investments, SCA, Anomaly Detection, Distributed, z Systems, and improve quality of service across your entire IT complex.",
+      "Room": 14,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 1196,
+      "Title": "Supporting Data Governance thru Data Lineage and Risk Reporting - Deep Dive into Governace Catalog",
+      "Abstract": "The objective of this Lab is to help you understand the value and purpose of creating and maintaining a Catalog of governed sources and the benefits such a Catalog provides. During the Lab, each user will follow a series of prescribed steps to establish a framework for Governance, thru Glossary Terms, Governance Rules and Stewardship. Continuing, each user will learn the process for loading data, such as Relational Databases, Analytical Reports or Models, and their governance. Further, learn how to extend and define additional and specific Informational Asset types, consistent with the Information Assets found within your Enterprise. Lastly, administrate and deliver Data Lineage across the Informational Landscapes and ETL tooling.",
+      "Room": 9,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 1245,
+      "Title": "Build a Powered by Watson Social CRM Cognitive Application",
+      "Abstract": "There is a lot of unstructured data in a lot of places in a lot of different forms. Uncovering valuable insights from say just the social media data can give offer a lot of value from a marketing perspective. Imagine if you had an app that can tell you the trending concepts (products, movies, sports teams etc) from social media & offer cognitive insights from the posted images, emotions from text and get a macro-level of what is happening across the vast amount of unstructured data. In this session you will build that app hands-on using Watson's cognitive API's on Bluemix as well as other API's. In the end you will have a working cognitive app that will offer the trends, insights and recommendations from the social media data",
+      "Room": 14,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 1264,
+      "Title": "Lab: Control IoT devices via Voice via Watson API's",
+      "Abstract": "In this LAB we will setup a Bluemix/IoT environment. We will connect some iot Device to the Watson IoT Platform . We will orchestrate the mqtt message flow and create some dashboard. Once we have the data flowing we will setup some Watson API to speak the Iot event out loud. Than setup Watson Api via Node-RED to take in language via Speech to text and setup the Natural Language analyser to fine tune the speech input. Result will be that the participants can ask Watson about the IoT Device and their sensor value in Natural language � like Watson what�s the room temperature � Hey Watson could you set the temperature to 20 C",
+      "Room": 6,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1295,
+      "Title": "IDAA on Cloud - Getting started, Use-Cases and Demo",
+      "Abstract": "If you heard about IDAA on Cloud, you are probably wondering where this service can be found, how you can get started and how it feels working with it compared to its appliance sister. This session answers these questions, and should get your head spinning on new, creative ways to use the IDAA Cloud service. In addition, we will be showing a live demo how the service can be started, how it connects to the mainframe, and how it can be use to offload analytical queries from DB2 for z/OS.",
+      "Room": 6,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1307,
+      "Title": "Watson Analytics Hands on Workshop",
+      "Abstract": "Our Watson Analytics Workshop is designed to introduce you to our revolutionary approach to analytics that is smart data discovery. Learn from Watson Analytics experts how you can benefit from guided exploration, automated predictive analysis and effortless dashboard creation. Following a live demonstration of the solution, we will provide a structured, hands-on education session for all participants to learn how to use the product with one of our sample datasets.",
+      "Room": 4,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1307,
+      "Title": "Watson Analytics Hands on Workshop",
+      "Abstract": "Our Watson Analytics Workshop is designed to introduce you to our revolutionary approach to analytics that is smart data discovery. Learn from Watson Analytics experts how you can benefit from guided exploration, automated predictive analysis and effortless dashboard creation. Following a live demonstration of the solution, we will provide a structured, hands-on education session for all participants to learn how to use the product with one of our sample datasets.",
+      "Room": 4,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1307,
+      "Title": "Watson Analytics Hands on Workshop",
+      "Abstract": "Our Watson Analytics Workshop is designed to introduce you to our revolutionary approach to analytics that is smart data discovery. Learn from Watson Analytics experts how you can benefit from guided exploration, automated predictive analysis and effortless dashboard creation. Following a live demonstration of the solution, we will provide a structured, hands-on education session for all participants to learn how to use the product with one of our sample datasets.",
+      "Room": 4,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 1320,
+      "Title": "A Primer for Large Scale OLAP Analytics with IBM Cognos TM1 & IBM Planning Analytics",
+      "Abstract": "As of TM1 Version 10.2.2 with its game-changing Multi-Threaded-Query (MTQ) capabilities, TM1 & now also IBM Planning Analytics facilitate the deployment of large-scale Cognitive Analytics Solutions against Billions of records while featuring exceptional analytic performance. This Hand On Lab (HOL) conveys architecture & design concepts that serve as a primer for building large-scale In-Memory OLAP models for Cognitive Analytics, including: (i)Query performance with MTQ: Configuration of TM1 MTQ & VMM, (ii)Cube, Dimension & Rules Design: Proven Performance Optimization Practices, Design Pitfalls to avoid, (iii)Parallel Data Load: Methods & Options, (iv)TM1 Security Model design guidelines (v)Performance Benchmarks, Examples & Exercises",
+      "Room": 9,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 1321,
+      "Title": "Placeholder for hands on Watson IoT Developer Lab",
+      "Abstract": "Placeholder for hands on Watson IoT Developer Lab",
+      "Room": 4,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 1321,
+      "Title": "Placeholder for hands on Watson IoT Developer Lab",
+      "Abstract": "Placeholder for hands on Watson IoT Developer Lab",
+      "Room": 4,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 1321,
+      "Title": "Placeholder for hands on Watson IoT Developer Lab",
+      "Abstract": "Placeholder for hands on Watson IoT Developer Lab",
+      "Room": 4,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "IT infrastructure",
+      "Session": 1331,
+      "Title": "Hands-on with sharding SQL and NoSQL in IBM's IoT engine",
+      "Abstract": "With IBM's IoT engine, end-users are able to store and use SQL and NoSQL data together in a single system and used them both in data processing operations. With single function NoSQL engines, sharding is used for scalability. This is not needed within the IBM IoT engine but sharding is available for both NoSQL collections and SQL tables for query processing enhancements, administration and more. This hands on lab will provide practical experience using sharding for both data types. The impact sharding has on queries is explored and solutions presented.",
+      "Room": 15,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 1343,
+      "Title": "Making and Presenting TM1 plans and scorecards easy with Performance Modeler and Cognos Insight",
+      "Abstract": "Work through self paced activities to learn how you can build models and compelling presentation layers for your end users, using Performance Modeler and Cognos Insight. Even if you have attended before, come again to participate in more activities, for beginners to advanced users.",
+      "Room": 9,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 1415,
+      "Title": "Test Drive a New Self-service Planning Capability in IBM Planning Analytics",
+      "Abstract": "IBM is previewing a new self service planning & analysis capability, aimed at business users. This lab session is to provide early feedback on the ease of use of this capability. Participants will be led through a series of real world planning & analysis exercises, and be asked for feedback on areas of planning & analysis that are most important to them.",
+      "Room": 9,
+      "Day": "Mon",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1429,
+      "Title": "Deep Dive into migration procedure from PureData System for Analytics to DashDB.",
+      "Abstract": "IBM is coming with a Next generation Platform for Analytics, DashDB local and will be GA-ed by end of July. Many customers are exited with this new product. There will be many PDA Netezza customers who will be looking forward to explore new Next Generation Platform at Insights-2016. One of the aspect will be to see how migration from Netezza to Dashdb will work. This session will serve this purpose. It will help demo the migration procedure and steps involved. It will also demonstrate some best practices around post migration activities.",
+      "Room": 6,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 1460,
+      "Title": "Put Data to Work with IBM DataWorks",
+      "Abstract": "DataWorks is a fully managed self-service data preparation and movement cloud service which enables you to easily access, combine and transform data. It provides the ability to get instant access to your data where it is stored, either on the cloud or on-premises. Users can bring data together from multiple relevant data sources, transform the data by refining, shaping and cleansing it and deliver it with trust and confidence to their desired target for analytical use cases. Learn first hand how DataWorks empowers business users and citizen analysts to put data to work by easily finding and use the data they need to accelerate data based business decisions using timely, accurate and trusted information.",
+      "Room": 14,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1567,
+      "Title": "IBM Cognos Analytics Reporting: Designing Effective Dashboards Best Practices",
+      "Abstract": "Building a dashboard from scratch can be a daunting task. One of the hardest parts is determining what a dashboard should include, based on differing requirements. In this hands-on lab session, attendees will build on their experience with IBM Cognos Analytics Reporting by reviewing and creating dashboards that encourage rapid analysis by users, and learning to implement best practices advocated by leaders in the field of presenting quantitative data.",
+      "Room": 2,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1567,
+      "Title": "IBM Cognos Analytics Reporting: Designing Effective Dashboards Best Practices",
+      "Abstract": "Building a dashboard from scratch can be a daunting task. One of the hardest parts is determining what a dashboard should include, based on differing requirements. In this hands-on lab session, attendees will build on their experience with IBM Cognos Analytics Reporting by reviewing and creating dashboards that encourage rapid analysis by users, and learning to implement best practices advocated by leaders in the field of presenting quantitative data.",
+      "Room": 2,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1614,
+      "Title": "IBM Cognos Analytics Reporting: Adding Conditional Formatting to Your Reports",
+      "Abstract": "In this session, designed for professional report authors, participants will see how to quickly and efficiently customize reports for specific report consumers. Participants will discover how to use conditional formatting to control which data is displayed, when it is displayed, how it is formatted, and what language it is displayed in.",
+      "Room": 1,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1614,
+      "Title": "IBM Cognos Analytics Reporting: Adding Conditional Formatting to Your Reports",
+      "Abstract": "In this session, designed for professional report authors, participants will see how to quickly and efficiently customize reports for specific report consumers. Participants will discover how to use conditional formatting to control which data is displayed, when it is displayed, how it is formatted, and what language it is displayed in.",
+      "Room": 1,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1638,
+      "Title": "Building a Word2Vec Model with Twitter Data using The Data Science Experience",
+      "Abstract": "It is always amazing when someone is able to take a very hard, present day problem, and translate it to one that has been studied for centuries. This is the case with Word2Vec, which transforms words into vectors. Text is unstructured data and has been explored mathematically far less than vectors. Newton (1642-1726) may have been the first one to study vectors, while text mining started its studies a few decades ago. In this tutorial, I will show how to build Word2Vec models with Apache Spark using The IBM Data Science Experience: a cloud-based tool for data professionals to learn, collaborate and create. In addition, I will show examples of how these models are used in data products.",
+      "Room": 6,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1718,
+      "Title": "Open Source, Open Labs, with the Big Data Dudes",
+      "Abstract": "Join Aaron and Henry, the dynamic duo behind The Big Data Dudes, for this fun, laid back lab session where you will have the chance to get hands-on time with a variety of open source technologies. The guys will briefly present some concepts and introductions to some popular open-source technologies. You will then jump into hands-on lab work and will use various Big Data technologies as you go through exercises the dudes took from their Big Data University courses.",
+      "Room": 10,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 1741,
+      "Title": "Enhance your Navigator mobile and desktop applications with Watson analytics",
+      "Abstract": "Participants will build custom Android and desktop applications using the new Java SDK to connect IBM Content Navigator data to Watson Analytics services. Attendees can build a desktop Java application or choose the the full experience of Android mobile development. Both paths include details on how to quickly setup your development environment and to add in the new IBM Navigator Mobile SDK for custom Navigator applications. Some details on iOS development will be provided as well with comparison of each and a discussion of the differences. (A lab you won�t want to miss!)",
+      "Room": 6,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1746,
+      "Title": "BI Modeling Basics in Framework Manager",
+      "Abstract": "In this introductory session designed for beginning Framework Manager modelers, participants will see how to quickly and efficiently create business intelligence models using IBM Cognos Framework Manager. Participants will work with Framework Manager query subjects to model facts and dimensions into star schemas, and create measures and calculations. Participants will utilize primary and foreign keys to create proper relationships between the entities in their models. Finally, participants will learn how to make their model \"report friendly\" and examine the model from the viewpoint of a report author.",
+      "Room": 2,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1746,
+      "Title": "BI Modeling Basics in Framework Manager",
+      "Abstract": "In this introductory session designed for beginning Framework Manager modelers, participants will see how to quickly and efficiently create business intelligence models using IBM Cognos Framework Manager. Participants will work with Framework Manager query subjects to model facts and dimensions into star schemas, and create measures and calculations. Participants will utilize primary and foreign keys to create proper relationships between the entities in their models. Finally, participants will learn how to make their model \"report friendly\" and examine the model from the viewpoint of a report author.",
+      "Room": 2,
+      "Day": "Mon",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 1748,
+      "Title": "Deploy and Experience Hybrid Cloud infrastructure for Data Analytics",
+      "Abstract": "This Hands on Lab session with help Clients to explore the capabilities of IBM Analytics products and their integration on a Hybrid cloud infrastructure. We will be presenting a use case deploying DataLake on IBM Softlayer cloud integrating many of the IBM cloud products ( dashDB, Cloudant, SoftLayer, DataWorks,Watson Analytics, On premises PDA system,Biginsights ). The Use case will covers the following aspects:- IBM Cloud Analytics solutions. - Advantages of using IBM Cloud products in terms of time, scalability and integration with each other. Integrating IBM Cloud with their existing On Prem infrastructure Data transfer within Cloud and On Prem system. How to have a complex Hybrid Cloud infrastructure up and running in few hours.",
+      "Room": 9,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1752,
+      "Title": "Predictive Modeling Without a Ph.D.",
+      "Abstract": "This hands-on lab session will show you how to use IBM SPSS Modeler software to automate the building of predictive models. You will learn how to read in data and automatically prepare that data for modeling and build predictive models for customer behavior. The session will also cover the automation of predictive models.",
+      "Room": 3,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1752,
+      "Title": "Predictive Modeling Without a Ph.D.",
+      "Abstract": "This hands-on lab session will show you how to use IBM SPSS Modeler software to automate the building of predictive models. You will learn how to read in data and automatically prepare that data for modeling and build predictive models for customer behavior. The session will also cover the automation of predictive models.",
+      "Room": 3,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1761,
+      "Title": "See IBM Cloudant Geospatial in Action",
+      "Abstract": "This lab uses the Cloudant Geospatial features on either a Cloudant.com multi-tenant account or Cloudant on Bluemix account. This lab will show you how you can combine the advanced queries of geographic info systems with the flexibility and scalability of Cloudant�s database-as-a-service. At the end of this lab, you should be able to: � Define the process and syntax to create a Geospatial index. � Explain the use cases for Cloudant Geospatial. � Create a Cloudant Geospatial index. � Query a Cloudant Geospatial index. � Integrate Cloudant Geospatial queries into your application.",
+      "Room": 5,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1763,
+      "Title": "Using IBM SPSS Statistics and R Programming Language Together",
+      "Abstract": "IBM SPSS Statistics software is the flagship statistical product from IBM and R is a popular open source programming language for statistical methods. In this hands-on lab session to learn how to use them together to take advantage of the best features of each. Learn how to use already integrated R packages and to tap other R packages. (Some familiarity with SPSS Statistics software is helpful. Knowledge of R is not required, but attendees should have some background in a programming language.)",
+      "Room": 5,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1766,
+      "Title": "DB2 High Availability Disaster Recovery (HADR) with Single Standby Database",
+      "Abstract": "This is an online lab which allows you to configure and manage a production database with a single standby database using the HADR facilities. Set up a Standby database for using the HADR recovery techniques, including configuring the Database Configuration options.Monitor the status of the primary and standby databases in an active HADR environment using the db2pd command. Use the START HADR, STOP HADR and TAKEOVER commands to manage the primary and standby databases of an HADR system.",
+      "Room": 2,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1766,
+      "Title": "DB2 High Availability Disaster Recovery (HADR) with Single Standby Database",
+      "Abstract": "This is an online lab which allows you to configure and manage a production database with a single standby database using the HADR facilities. Set up a Standby database for using the HADR recovery techniques, including configuring the Database Configuration options.Monitor the status of the primary and standby databases in an active HADR environment using the db2pd command. Use the START HADR, STOP HADR and TAKEOVER commands to manage the primary and standby databases of an HADR system.",
+      "Room": 2,
+      "Day": "Tues",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1766,
+      "Title": "DB2 High Availability Disaster Recovery (HADR) with Single Standby Database",
+      "Abstract": "This is an online lab which allows you to configure and manage a production database with a single standby database using the HADR facilities. Set up a Standby database for using the HADR recovery techniques, including configuring the Database Configuration options.Monitor the status of the primary and standby databases in an active HADR environment using the db2pd command. Use the START HADR, STOP HADR and TAKEOVER commands to manage the primary and standby databases of an HADR system.",
+      "Room": 2,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1767,
+      "Title": "Learn to use built-in analytics in DB2 11 and Watson APIs",
+      "Abstract": "Learn to set up DB2 11 in a highly scalable MPP environment, loaded with real-world data - traffic, sports, fashion.",
+      "Room": 16,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1775,
+      "Title": "Advanced Modeling Techniques in Framework Manager",
+      "Abstract": "This session, designed for advanced modelers, will show participants how and when to use determinants. Participants will become familiar with advanced parameterization techniques and stored procedure query subjects. Participants will examine how to manage Framework Manager packages.",
+      "Room": 3,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1783,
+      "Title": "See IBM Graph in Action",
+      "Abstract": "This lab uses an IBM Graph on Bluemix account. This lab will show you that IBM Graph is an easy-to-use, fully managed graph database service for storing, querying, and visualizing data points, their connections, and properties. At the end of this lab, you should be able to: � Define basic IBM Graph terminology and concepts. � Create a schema for your Graph database. � Perform basic create, read, update, and delete operations on your data. � Build traversal queries using Gremlin query language in the IBM Graph Query Builder.",
+      "Room": 5,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1791,
+      "Title": "IBM Cognos Analytics 11.0: Discovering What's New",
+      "Abstract": "In this Hands on Lab, participants will learn about new user interface, features, and capabilities introduced in IBM Cognos Analytics. Participants will have full access to multiple IBM Cognos Analytics (v11.0) Web-based Training (WBT) offerings to learn what's new at their own pace. Additionally, participants will be able to access a product sandbox with IBM Cognos Analytics installed, so that they can immediately apply the concepts learned in this discovery session.",
+      "Room": 1,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1791,
+      "Title": "IBM Cognos Analytics 11.0: Discovering What's New",
+      "Abstract": "In this Hands on Lab, participants will learn about new user interface, features, and capabilities introduced in IBM Cognos Analytics. Participants will have full access to multiple IBM Cognos Analytics (v11.0) Web-based Training (WBT) offerings to learn what's new at their own pace. Additionally, participants will be able to access a product sandbox with IBM Cognos Analytics installed, so that they can immediately apply the concepts learned in this discovery session.",
+      "Room": 1,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1791,
+      "Title": "IBM Cognos Analytics 11.0: Discovering What's New",
+      "Abstract": "In this Hands on Lab, participants will learn about new user interface, features, and capabilities introduced in IBM Cognos Analytics. Participants will have full access to multiple IBM Cognos Analytics (v11.0) Web-based Training (WBT) offerings to learn what's new at their own pace. Additionally, participants will be able to access a product sandbox with IBM Cognos Analytics installed, so that they can immediately apply the concepts learned in this discovery session.",
+      "Room": 1,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1791,
+      "Title": "IBM Cognos Analytics 11.0: Discovering What's New",
+      "Abstract": "In this Hands on Lab, participants will learn about new user interface, features, and capabilities introduced in IBM Cognos Analytics. Participants will have full access to multiple IBM Cognos Analytics (v11.0) Web-based Training (WBT) offerings to learn what's new at their own pace. Additionally, participants will be able to access a product sandbox with IBM Cognos Analytics installed, so that they can immediately apply the concepts learned in this discovery session.",
+      "Room": 1,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1817,
+      "Title": "Interactive Reporting in IBM Cognos Analytics",
+      "Abstract": "In this session, authors will learn how to use the Reporting Active Report template to design and build disconnected but interactive reports for users. Authors will learn how to add various tools, controls, and data objects (including RAVE visualizations) to the reports, which provide the interactive analysis capabilities that users need, and which allow them to consume the reports in either a connected or disconnected environment. Authors will also learn how to design and build active reports for mobile devices, such as the iPad tablet, using tools and techniques that are specific for consumption on that platform.",
+      "Room": 3,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1817,
+      "Title": "Interactive Reporting in IBM Cognos Analytics",
+      "Abstract": "In this session, authors will learn how to use the Reporting Active Report template to design and build disconnected but interactive reports for users. Authors will learn how to add various tools, controls, and data objects (including RAVE visualizations) to the reports, which provide the interactive analysis capabilities that users need, and which allow them to consume the reports in either a connected or disconnected environment. Authors will also learn how to design and build active reports for mobile devices, such as the iPad tablet, using tools and techniques that are specific for consumption on that platform.",
+      "Room": 3,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1838,
+      "Title": "Cognos Analytics Workshop: Introduction to Modern Self-Service BI",
+      "Abstract": "Business problems are complicated. Your Analytics tools shouldn't be. Take a test drive of Cognos Analytics V11, IBM�s Modern Business Intelligence solution that enhances the efficiency and capabilities of business users, report authors, and administrators alike. During the workshop, Users will learn how to use their own personal data sets and blend those with enterprise data to create integrated data sources for smart data discovery. Users will experience the way in which IBM Cognos Analytics empowers business users to perform smart data discovery and create visually appealing dashboards with ease using a modern user interface and the graduated nature of the entire user experience.",
+      "Room": 10,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1840,
+      "Title": "Predictive Analytics Workshop: Forward-Looking Business Intelligence",
+      "Abstract": "Embrace the Power of Predictive. Join us for this hands on workshop to experience how extending advanced analytics into your business Intelligence environment allows you to surface up new information from your data and develop insights about future outcomes based on historical results. Through hands-on exercises and interactive demos, you�ll experience how to use the IBM Analytics solution to progress your organization up the analytics maturity curve from Descriptive Analytics to Predictive Analytics, enabling decision makers to drive better business outcomes.",
+      "Room": 10,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1865,
+      "Title": "Spark for Cloudant analytics",
+      "Abstract": "Spark and Spark streaming have become the de-facto standards for big data analytics and we are proud to introduce the new Cloudant-Spark connector to support these standards. Learn how you can now build your big data analytics using Cloudant and Spark. We will introduce the technology stack, the APIs, as well as the Bluemix services available for you to get started today. The presentation will feature both, the high level overview to the novice Spark user and the technical deep-dive to the data scientist.",
+      "Room": 6,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1874,
+      "Title": "Clustering and Association Modeling Using IBM SPSS Modeler",
+      "Abstract": "This session will introduce participants to the concepts of clustering, as well as association. Are a telecommunications company's customers more likely to churn if they make more international calls or more local calls? Are grocery store customers more likely to buy milk if they buy bread and eggs, or if they buy meat and cheese? Participants will learn how questions like these are answered by using clustering and associations. Participants will model solutions for real-world examples using data from fictitious telecommunication, grocery store, and education companies to investigate the purpose behind clustering and association modeling.",
+      "Room": 5,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1874,
+      "Title": "Clustering and Association Modeling Using IBM SPSS Modeler",
+      "Abstract": "This session will introduce participants to the concepts of clustering, as well as association. Are a telecommunications company's customers more likely to churn if they make more international calls or more local calls? Are grocery store customers more likely to buy milk if they buy bread and eggs, or if they buy meat and cheese? Participants will learn how questions like these are answered by using clustering and associations. Participants will model solutions for real-world examples using data from fictitious telecommunication, grocery store, and education companies to investigate the purpose behind clustering and association modeling.",
+      "Room": 5,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 1901,
+      "Title": "Introduction to IBM Content Navigator plug-in development",
+      "Abstract": "Attendees will get an introduction to the basics of plug-in development for IBM Content Navigator. The session will walk attendees through exercises to help them gain a deeper understanding of how to create and deploy plug-ins as well as an introduction to some of the features provided by the plug-in interface.",
+      "Room": 6,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1909,
+      "Title": "Overview of IBM Cognos Dynamic Cubes",
+      "Abstract": "This session, designed for data modelers, will introduce participants to IBM Cognos Dynamic Cubes. Participants will learn what Dynamic Cubes are, as well as how, and why they are used. Participants will get hands-on experience in creating Dynamic Cubes, learn how to deploy, stop, start, and configure their cubes, and become familiar with the concept of a virtual cube.",
+      "Room": 1,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1909,
+      "Title": "Overview of IBM Cognos Dynamic Cubes",
+      "Abstract": "This session, designed for data modelers, will introduce participants to IBM Cognos Dynamic Cubes. Participants will learn what Dynamic Cubes are, as well as how, and why they are used. Participants will get hands-on experience in creating Dynamic Cubes, learn how to deploy, stop, start, and configure their cubes, and become familiar with the concept of a virtual cube.",
+      "Room": 1,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 1920,
+      "Title": "Move the Right Thing � IBM StoredIQ Data Assessment, Cleanup, and Cloud Migration",
+      "Abstract": "Migration of on-premises data to the cloud can be both unnecessarily costly and slow when no data intelligence is injected into the selection of targeted data. If adequate attention is not paid to the content being migrated, the migration might even raise the overall risk associated with the data being migrated. Rather than merely kicking the data down the road to the new corner on the cloud, IBM StoredIQ enables organizations to evaluate their data for both value and risk. With this level of data intelligence, an enterprise can selectively determine what repository makes the most sense for the data they identify. StoredIQ's assessment and movement functionality can enable your organization to move the right data to the best repository.",
+      "Room": 7,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1932,
+      "Title": "READ: Real-Time Visualizations for APIs and Streams",
+      "Abstract": "READ is a cloud-ready developer centric tool for rapid prototyping of visualizations and dashboards from APIs. READ provides four building blocks: 1) Dozens of built in visualizations ranging from basic to advanced chart types, and a developer playground for rapidly extending this library with custom chart types, 2) API integration and aggregation services, 3) Data transformation and advanced data cubing services, 4) Sharing and publishing mechanisms for dashboards and new data APIs. Use READ to create and publish visually appealing dashboards by accessing and combining data from real-time APIs created in Streams, Watson APIs, public APIs, and other APIs of your choice.",
+      "Room": 7,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 1936,
+      "Title": "Deploying IBM SPSS Modeler Streams for Scoring Within the PCI Environment",
+      "Abstract": "The IBM Predictive Intelligence (PCI) platform enables analysts to build predictive models then deploy them to predict the behavior of current and future customers. In addition, as the customer data changes, PCI helps automate the time consuming task of evaluating and refreshing predictive models. This hands-on lab focuses on the deployment portion of PCI to show you how to effectively apply predictive models you create in IBM SPSS Modeler to current customers. During this lab, you will learn how deploy IBM SPSS Modeler streams for batch and real-time scoring in Collaboration and Deployment Services (C&DS). In addition, you will learn how to automate the task of evaluating and refreshing predictive models within C&DS.",
+      "Room": 6,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1959,
+      "Title": "Modernization to data warehousing and analytics using fluid query",
+      "Abstract": "This LAB session will show case how fluid query bringing cloud-based modernization to data warehousing and analytics. This LAB will help customer to understand - - How easily we can use DASH DB table directly into Pure data systems for analytics - How effortless ETL processing will be done at enterprise data warehouse level. - How easy real time data integration from different sources and use for reporting. - How customer can meet their business SLA�s.",
+      "Room": 7,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 1961,
+      "Title": "IBM Case Manager and Box",
+      "Abstract": "Participants will build custom Case Manager solution that will fully integrate Box into its workflow. The solution will allow collaboration with users who are external to the case and the enterprise.",
+      "Room": 10,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 1964,
+      "Title": "Efficient data load technique's from heterogenous data sources.",
+      "Abstract": "Whoever dealing with data knows the pain while dealing with data loading. Most common questions are :- 1. How to deal with data in-compatibility. 2. How fast can we load data. 3. How to recover from load failures. 4. How to deal with data quality issues. 5. Import/Export data from Cloud This HOL present the real time examples to answer all above questions. We will be demonstrating examples of simple load techniques like nz_load/nz_migrate and how with some modification this can cater various other scenarios. Also this lab also focus on movement of data from on-prem system to cloud and vice versa",
+      "Room": 7,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 1969,
+      "Title": "Watson Knowlecge Studio - Hands on Lab",
+      "Abstract": "Go through the entire process of setting up a machine trained Natural Language Processing model using Watson Knowledge Studio. You will go through the entire process of setting up, training, and deploying a custom, machine trained annotator and then testing it as a cloud based service.",
+      "Room": 12,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 2043,
+      "Title": "Real-Talk: Training Watson to See: Retail",
+      "Abstract": "See how 5 clients are disrupting the status quo and using Watson to disrupt in the retail space to scale their business. Learn how they trained Watson and improved their business to generate real-world results, not magic.",
+      "Room": 15,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2095,
+      "Title": "Hands On Lab: From Zero to Social Analytics Hero with Watson Analytics for Social Media",
+      "Abstract": "This Hands On Lab for Watson Analytics for Social Media will guide you through the complete process of creating a social media analysis for a particular domain, as well as analyzing and interpreting the results of an analysis. We will also cover ways on how you can combine the results with other data within Watson Analytics. As part of the Hands On Lab, we will share best practices as well as use cases, so you have all the information you need to get started on your own analysis.",
+      "Room": 10,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2100,
+      "Title": "Easily used and clearly present for data analysis by Watson Analytics",
+      "Abstract": "The Chivas company has a data for Chivas sales on TaoBao, includes sale price, discount off percentage, campaign type, outlet name, and some other detailed information, he�d like a detailed report about what elements impact the revenue, and what kind of campaign can get the best revenue. He is not good at data analysis with complex analysis tools, so he chooses Watson Analytics, he can ask WA directly: �What drives Revenue?�, WA told him �sales and campaign type� has 85% strength impaction, then he found the activity for Chinese New Year made the biggest sales and revenue, and the right price, WA also generates a report with the visualization which is easy to understand, this is the important information for further decision.",
+      "Room": 15,
+      "Day": "Tues",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2135,
+      "Title": "Advanced Configurations for typical Customer Production environments with IBM Stewardship Center",
+      "Abstract": "IBM Stewardship Center provides data stewardship capabilities around IBM MDM and is built with IBM Business Process Manager. It comes with a default installation and configuration options with embedded IBM WAS. Customer production environments are more complex in terms of messaging engines , external LDAPs etc. This hands-on-lab shows you how to do those configurations with a step-by-step instructions for configuring IBM Stewardship Center with an external LDAP , configuring with IBM MQ for messaging across MDM and BPM.",
+      "Room": 15,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 2146,
+      "Title": "Build a cognitive capture application using Datacap Insight Edition",
+      "Abstract": "Learn how to enable cognitive capture by building an application using Datacap Insight Edition. This lab will show you how the analytics tools can be used in Datacap. We will analyze the layout of documents, leverage BigInsights extractors and call out to Watson Alchemy to retrieve keywords, key sentences, and more.",
+      "Room": 7,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 2160,
+      "Title": "Open Source Predictive Analytics on Cloud - Use case with Spark, Bluemix & Data Scientist Workbench",
+      "Abstract": "Input data in csv format (from any data source) Logon to Bluemix Load data into dashDB (on Bluemix cloud) Logon to Data Scientist Workbench (on cloud) Read the data (dashDB) and ingest into Apache Spark data frame using Jupyter Notebook interface Run machine learning algorithm on the ingested data on the same Notebook Save results into a parquet file Read the parquet file from Zeppelin for cool visualization of the results",
+      "Room": 14,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 2178,
+      "Title": "Learn Hands-on Spark",
+      "Abstract": "Spark is one of the hottest technology for big data analytics and Spark skills are highly in demand. In this lab session you will learn about Spark fundamentals and apply the concepts hands-on using a Spark environment on cloud. We will use a real life scenario and data set to derive insight using Spark.",
+      "Room": 12,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 2182,
+      "Title": "Working with DB2 for z/OS in the Cloud era",
+      "Abstract": "The entire IT industry is transforming, so is DB2 for z/OS. The platform, known throughout the industry for its outstanding RAS, vertical scalability, security, has also been empowered with foundation Cloud capability. With it, clients can transform to value-generating service providers internally or over the internet. In this hands-on lab, the audiences will learn these new Cloud capabilities including provisioning, application deployment and development. They could exploit the new approaches of working with DB2 in Cloud era: *Manage service templates and authorization with z/OSMF *Provision DB2z on self-service portals *Deploy the backend of a Mobile app to DB2 with REST APIs *Run the Mobile app communicating with DB2 with REST APIs",
+      "Room": 10,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 2187,
+      "Title": "Learn Data Science Hands-on",
+      "Abstract": "Data Science is one of the hottest job profiles and highly in demand. You no longer need a Phd. in maths or stats to become a data scientist. Any data professional can upgrade their skills and learn data science. In this lab we will introduce the basics of data science and get you to apply the concepts hands-on.",
+      "Room": 12,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 2187,
+      "Title": "Learn Data Science Hands-on",
+      "Abstract": "Data Science is one of the hottest job profiles and highly in demand. You no longer need a Phd. in maths or stats to become a data scientist. Any data professional can upgrade their skills and learn data science. In this lab we will introduce the basics of data science and get you to apply the concepts hands-on.",
+      "Room": 12,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 2202,
+      "Title": "Use your mobile device to automatically capture forms, checks or IDs using Datacap Mobile",
+      "Abstract": "Try out Datacap Mobile capture technology by capturing form data, reading check data, or automatically capturing ID cards.",
+      "Room": 7,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2235,
+      "Title": "Big Data, Big Security Problems",
+      "Abstract": "This year has seen a significant increase in the level of interest in the topic of security and auditing for Hadoop and MongoDB. Hadoop and MongoDB vendors are responding with better security features, and by partnering with the market-leading data security and compliance solution for Hadoop and MongoDB, IBM Security Guardium provides organizations the value of real-time monitoring, alerting, reports, compliance workflow, and more for Hadoop and MongoDB. Get hands-on with Guardium and IBM BigInsights for Apache Hadoop, and learn how to configure real-time alerts for suspicious behavior, customize prebuilt reports, and use other Guardium features such as quick search and compliance workflow.",
+      "Room": 10,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2247,
+      "Title": "How to Build Expert Storybooks in Watson Analytics",
+      "Abstract": "In this hands on lab, learn how to build Expert Storybooks in Watson Analytics. Guided analytics templates for business problems, Expert Storybooks act as personal guides, walking users through the analysis, pointing out top findings and helping users interpret results in plain language. Learn how to effectively design and build an Expert Storybook using a sample data set and even enhance the functionality of Watson Analytics using cloud-based APIs from Bluemix or Watson Developer Cloud.",
+      "Room": 8,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 2268,
+      "Title": "Understanding and Using the new innovative web presentation layer for TM1",
+      "Abstract": "Come and experience new web presentation layer for TM1 - Planning Analytics Workspace. Create your own dashboards, set up your scorecards, and bring your own iPads to view the results on-the-go.",
+      "Room": 11,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 2268,
+      "Title": "Understanding and Using the new innovative web presentation layer for TM1",
+      "Abstract": "Come and experience new web presentation layer for TM1 - Planning Analytics Workspace. Create your own dashboards, set up your scorecards, and bring your own iPads to view the results on-the-go.",
+      "Room": 11,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 2384,
+      "Title": "Cloudy with a chance of real time data movement",
+      "Abstract": "Discuss data movement from enterprise databases DB2, Oracle, Microsoft SQL Server into IBM Cloud environments dashDB, Cloudant and BigInsights (Hadoop)",
+      "Room": 15,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2468,
+      "Title": "Take Your Legal Processes To The Cloud ( IBM eDiscovery on Cloud )",
+      "Abstract": "IBM eDiscovery on Cloud provides an end-to-end platform that streamlines the eDiscovery process for legal stakeholders. Use IBM eDiscovery on cloud to gain efficiency and transparency in custodian identification, legal hold notification, and eDiscovery collection and preservation. IBM eDiscovery on Cloud automates evidence identification and collection processes for supported data repositories, saving time and reducing risk of fines and penalties. IBM eDiscovery on Cloud optimizes the outcome of early data assessments to make early case settlement decisions. Locating and analyzing data in-place in supported repositories allows customers to rapidly review and analyze data before it is collected saving time and money.",
+      "Room": 8,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2539,
+      "Title": "Optimize Data Ingestion and transformation for the Data Lake",
+      "Abstract": "The attendee of this lab session gives a hands on experience to the user, the capabilities of the new Hive Connector, including configuration of the connector with Kerberos authentication, as well newly supported data formats such as ORC, AVRO and PARQUET. We would also explore on the other options available within the IBM InfoSphere Information Server, for the Data movement from the Hadoop distributions and the new features / functionality added in this area. The booth will also showcase the options available for working with the NoSQL databases such as Cassandra and MongoDB.",
+      "Room": 8,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2573,
+      "Title": "End to End Data Governance using IBM Infosphere Information Server and IBM Infosphere MDM",
+      "Abstract": "In this session, you will primarily learn how to use IBM InfoSphere Information Server to load data into MDM Advanced Edition. Further, you will understand how to use out of the box product capabilities to transform, standardize and cleanse data, prior to load. And finally, the data governance processes and tools to be used for managing the data as defined by your company�s data policies. The key take away from this session will be to understand the design pattern for meeting Data loading and Governance requirement in MDM.",
+      "Room": 5,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2573,
+      "Title": "End to End Data Governance using IBM Infosphere Information Server and IBM Infosphere MDM",
+      "Abstract": "In this session, you will primarily learn how to use IBM InfoSphere Information Server to load data into MDM Advanced Edition. Further, you will understand how to use out of the box product capabilities to transform, standardize and cleanse data, prior to load. And finally, the data governance processes and tools to be used for managing the data as defined by your company�s data policies. The key take away from this session will be to understand the design pattern for meeting Data loading and Governance requirement in MDM.",
+      "Room": 5,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 2639,
+      "Title": "How to Leverage Hierarchies in Planning Analytics",
+      "Abstract": "Gain hands on experience and understanding of how to build new, or revitalize your existing TM1 database applications with hierarchies.",
+      "Room": 11,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 2653,
+      "Title": "Hands On Lab: Watson IoT Platform - IBM Watson IoT Real Time Insights Walk Through",
+      "Abstract": "In a smart building, it is imperative to monitor smooth functioning of facilities operations. One of the critical parameter to monitor is temperature of the facility. TRIRIGA is an integrated workplace management system, which increases the operational, financial and environmental performance of facilities. Temperature sensor will detect sudden increase in temperature. Events like �door left open� in case refrigerators and vending machines can lead to damage of food and grocery. Real time event demands real time action and with IBM Real time insights service along with Watson IoT can not only detect the event but also instantiate an action. The action can be in the form of web hook (http) to another application or Email or IFTTT.",
+      "Room": 8,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 2673,
+      "Title": "Enable Cognitive Search by pairing Watson Explorer on premise with the Watson Developer Cloud",
+      "Abstract": "We all know that enterprise search is old news, and that one of the reasons that Cognitive Computing is a new paradigm is that we're allowing computers to understand and use information in superior ways, enabling self-service, more effective agents, and transforming industries. However, what if you could easily leverage cognitive capability to extend your on-premise search with Watson Explorer Advanced Edition, allowing your customers and your employees to FIND answers rather than just page through long lists of results? We'll show you in this session how to quickly get up and running with Watson Explorer, and how to connect to, train, and use cognitive capability to start providing answers and enhanced insights into information.",
+      "Room": 15,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2690,
+      "Title": "Real Time Traffic Forecasting with Spatio-Temporal Analytics Using Real Data",
+      "Abstract": "Forecasting traffic status in real-time can provide guidance for people�s trip and for traffic administration, and it also brings great values for traffic management and planning. However, this task is very challenging for traditional methods because traffic status is not a simple time series but a spatio-temporal series which is correlated with adjacent roads. In this session, a machine-learning algorithm, our patented spatio-temporal prediction (STP), will be applied to forecast traffic status precisely in real-time. We will also demonstrate our approach to detect clusters of highly correlated roads in the network. Moreover, you will learn what-if analytics to forecast traffic status in scenarios derived from real case.",
+      "Room": 15,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 2691,
+      "Title": "Hands-On Lab: Building a 360� view with Watson Explorer using structured & unstructured banking data",
+      "Abstract": "For every company, the information is a strategic asset capable of driving better decisions and improving efficiency. The amount of data available to organizations is growing exponentially and is often scattered across different systems: databases, emails, social networks... IBM Watson Explorer can help you to manage these structured and unstructured data by providing you an exploration solution that combines search and content analytics. Based on data coming from the Banking Showcase located in the IBM Montpellier Client Center, you will discover the powerful capabilities of this solution! This lab requires no direct programming and will give you practice on IBM Watson Explorer, from the backend configuration to the Application Builder",
+      "Room": 16,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 2711,
+      "Title": "Social Media Management",
+      "Abstract": "How do you respond to what your customers are saying about you? Wouldn't it be great to keep track of your response, and optimize it? In this lab, you'll act on your social media insights. You'll view and understand events and sentiment in your social networks, predict the best strategy to take, collaborate to take action, and share an official response using cloud content. You'll refine and learn from your actions by controlling content, tracking, and organizing your information.",
+      "Room": 11,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 2723,
+      "Title": "Advanced analytics in dashDB for Developers",
+      "Abstract": "A cloud based managed service like dashDB makes it easy for developers to create powerful new scalable applications. In this hands-on lab developers will learn, how they can make best used of dashDB. They will see how they can make use of the features of dashDB to easily provide their users fast answers to complex business questions. The technologies which they will use with dashDB in this hands-on lab range from languages like R over Spark to in-database analytics features within dashDB (e.g. geospatial and machine learning)",
+      "Room": 11,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 2744,
+      "Title": "Crime and Punishment: Cognitive decision making solves the case",
+      "Abstract": "Last year, you saw the compelling ECM keynote - now get your hands on the solution! See how content and analytics come together with intelligence to identify key events, images, and information, optimizing decision making to solve business problems.",
+      "Room": 8,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 2752,
+      "Title": "Unleash the sensor data on your Smart phone with IBM Watson IoT platform",
+      "Abstract": "IBM IoT platform can connect and analyze data from complex assets like an engine of a plane and to a simple devices like a smart phone. Though sounds a simple device but Smart phones are packed with advanced sensors like accelerometers, gyroscope, magnetometer, compass and barometers. Data from these sensors can be fused together and analyzed on the IBM IoT platform to develop a personalize interaction between the device and their masters. In addition to monitoring the health of the device, data from accelerometers and barometers can be analyzed in real time to assist users navigate inside a building or in an industrial environment where navigation by GPS is not supported.",
+      "Room": 11,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 2780,
+      "Title": "Hands On Lab: Device Management API's with IBM Watson IoT Platform Walk Through",
+      "Abstract": "As per Gartner, One of the most Influential area for monetize in Internet of Things is Device Management. IBM Watson IoT Platform provides native device management where we can define device as managed and un-managed devices. Registration of devices, Device actions like firmware updates, factory reset, device reboot, location update, weather context",
+      "Room": 8,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 2803,
+      "Title": "IBM Cognos Analysis for Microsoft Excel (CAFE) for IBM Cognos TM1 Excel Planning and Analysis",
+      "Abstract": "This session will give you everything you need to start working with Cognos Analysis for Microsoft Excel (CAFE). Whether you are a new user to TM1 and Planning Analytics or a TM1 veteran this session will introduce CAFE techniques helping you optimize and accelerate your spreadsheet based TM1 analysis and planning. The workshop will cover creating new analysis spreadsheets as well as importing and running your existing Perspectives reports in Cognos Analysis for Microsoft Excel. Whichever path you take, build, import or redesign, you�ll see how you can take advantage of Cognos Analysis for Microsoft Excel�s high speed access to TM1 over the WAN and run all your reports in a single add-in.",
+      "Room": 3,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 2803,
+      "Title": "IBM Cognos Analysis for Microsoft Excel (CAFE) for IBM Cognos TM1 Excel Planning and Analysis",
+      "Abstract": "This session will give you everything you need to start working with Cognos Analysis for Microsoft Excel (CAFE). Whether you are a new user to TM1 and Planning Analytics or a TM1 veteran this session will introduce CAFE techniques helping you optimize and accelerate your spreadsheet based TM1 analysis and planning. The workshop will cover creating new analysis spreadsheets as well as importing and running your existing Perspectives reports in Cognos Analysis for Microsoft Excel. Whichever path you take, build, import or redesign, you�ll see how you can take advantage of Cognos Analysis for Microsoft Excel�s high speed access to TM1 over the WAN and run all your reports in a single add-in.",
+      "Room": 3,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 2823,
+      "Title": "Hands On Lab: IoT Real-Time Analytics on the Edge",
+      "Abstract": "This lab will give you the hands on experience using the Watson IoT Platform Analytics capability to define and manage analytics that run on the edge. No analytics experience necessary, come learn how to define your own analytics for the edge and see how the Watson IoT Platform handles the complexity of managing and distributing them to the edge for you.",
+      "Room": 8,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2843,
+      "Title": "Understanding IBM InfoSphere Data Replication Q Replication performance - where is the bottleneck?",
+      "Abstract": "IBM InfoSphere Data Replication Q Replication can replicate transactions across continental distances with sub-second latency, allowing Live Reporting over replicated data. Learn how to precisely determine the time and cause of any replication latency exceeded occurrences, by analyzing the Q Replication monitor tables.",
+      "Room": 8,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 2915,
+      "Title": "End to End Data Quality Management and Unified Data Stewardship",
+      "Abstract": "This is a placeholder for a �Lecture & Show� session from the Governance development team discussing the needs of an End to End Data Quality Management and Unified Data Stewardship. The IBM solution and new capabilities in this space will be demonstrated.",
+      "Room": 13,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2926,
+      "Title": "IBM Data Science Experience hands on Introduction",
+      "Abstract": "Get familiar with IBM Data Science Experience by learning about the product features and functionality in a hands on lab.",
+      "Room": 4,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2926,
+      "Title": "IBM Data Science Experience hands on Introduction",
+      "Abstract": "Get familiar with IBM Data Science Experience by learning about the product features and functionality in a hands on lab.",
+      "Room": 4,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2941,
+      "Title": "IBM Data Science Experience Advanced Workflow from Notebooks to RStudio",
+      "Abstract": "Learn advanced techniques with IBM Data Science Experience by completing a hands on lab guiding you through a workflow starting with Jupyter Notebooks and working to RStudio. See how easy it is to use multiple open source tools together in Data Science Experience; all powered by Spark.",
+      "Room": 13,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Security products",
+      "Session": 2945,
+      "Title": "IBM Security Guardium GDPR Accelerator LAB",
+      "Abstract": "Demo LAB for IBM Security Guardium GDPR Accelerator",
+      "Room": 13,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 2956,
+      "Title": "Introduction to stream computing: exploring IBM Streams",
+      "Abstract": "In a friendly, hands-on manner, explore the features of IBM Streams while building your first stream-processing application, all the way to tapping into a live data feed and showing results graphically on a map. No need to learn a new language (but you can lift the cover to catch a glimpse) or climb a steep learning curve; the graphical editing environment lets you focus on solving the problem. Along the way, learn some surprising truths about processing data in motion.",
+      "Room": 13,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 3029,
+      "Title": "From lab to production: Scale up your data science with DSX",
+      "Abstract": "Learn how IBM Data Science Experience can be used in early stages of a data science project to create models that can then be scaled. By making it easy to change Spark instances with Jupyter notebooks or RStudio, Data Science Experience makes it easy to scale up when you are ready.",
+      "Room": 13,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Enterprise content management",
+      "Session": 3044,
+      "Title": "Building Cognitive Solutions using Bluemix and IBM Case Manager",
+      "Abstract": "IBM Case Manager provides the ability to extend solutions through widgets, workflow components and ICN plug-ins. These custom extensions can be used in conjunction with Bluemix services to develop a cognitive solution in IBM Case Manager. Watson and Analytics services are called by custom widgets to provide dynamic integration with the users and their actions. A brief demonstration of a cognitive Case Manager solution integration with Bluemix will be shown followed by a hands on lab. This session will provide a hands-on lab that walks attendees through calling Bluemix services from Case Manager. The lab will walk users through building a custom Case Manager widget and using that widget to call a Bluemix service.",
+      "Room": 13,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 3094,
+      "Title": "Building services on Bluemix for seamless integration of applications in Hybrid cloud",
+      "Abstract": "In today�s world where there is an increasing adoption of Cloud technology, organizations have to deal with both the existing on-premise applications and the applications hosted on Cloud. There is an increasing need to use the data stored in On-Premise by the applications in Cloud and vice versa. This Lab focuses on building services on Bluemix which will facilitate to integrate applications in a Hybrid Cloud environment.",
+      "Room": 15,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 3141,
+      "Title": "Secrets of the Pros: Using Data Server Manager to monitor, manage and mitigate performance problems",
+      "Abstract": "This hands-on-lab will teach you how to use the latest version of Data Server Manager for Linux, Unix and Windows, to diagnose and resolve performance problems. You will work on four use-cases where a query is not performing as manifested in the CPU, I/O, Memory and Locking information. A fifth use case will go beyond the monitoring diagnosis to show how you can mitigate the current problem by tuning a single query or the entire workload the query belongs to.",
+      "Room": 13,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 3200,
+      "Title": "Simplify Your Life With Your Own Watson Personal Assistant",
+      "Abstract": "We all lead busy lives, so it can be a challenge to find timely and relevant information, but what if you had a personal assistant to deliver this for you? In this lab, you will build your own cognitive cloud app powered by Watson to deliver news and weather customized for your preferences and location. You will build your own NodeJS application deployed to Bluemix and use services from the Watson Alchemy News and the Weather Company. News articles are analyzed for category and sentiment and a real time weather forecast is delivered for your location. Your assistant will speak to you with Watson text-to-speech technology, or can tweet your report. In the process, you will also learn more about Node-RED, NodeJS and Bluemix.",
+      "Room": 12,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 3238,
+      "Title": "How'd They Do That? Disrupting the World of Parts Replacement Through the Cloud",
+      "Abstract": "Uber did it with transportation, Facebook did it with content, Alibaba did it with merchandise, Airbnb did it with lodging. Now see how startup Partpic is totally disrupting things in the multi-billion dollar parts replacement world, by introducing a new way of using cloud based visual recognition APIs, and other cognitive technology, to revolutionize industrial pipeline fulfillment WITHOUT OWNING INVENTORY. By leveraging the support, expertise and access afforded by Watson's cloud based developer partnerships and services like Bluemix, Partpic is redefining normal, putting the power of speed & accuracy into the hands of end users across multiple industries, through just a smartphone app or kiosk quick-pic. See how we're shaking things up.",
+      "Room": 16,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 3281,
+      "Title": "Hands on introduction to Apache Spark",
+      "Abstract": "The hands on session will provide participants the basic knowledge of Apache Spark. The session has 2 hands on labs teach participants how to start coding using Apache Spark in Juypter notebook on IBM Data Science Experience/ Bluemix cloud platform. Lab 1, �Hello Spark� contains the basics to create RDDs, pull in data files, run map, filter and other basic transformation command. Lab 2, �Spark SQL� contains the basics to create Dataframes, run spark SQL, create tables, join tables/dataframes, visualize Spark SQL results with matplotlib.",
+      "Room": 11,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Internet of Things solutions",
+      "Session": 3282,
+      "Title": "Fun with IBM Watson IoT Platform and IBM Blockchain",
+      "Abstract": "In this lab, you will gain first-hand experience on deploying Smart contracts for IoT in IBM Blockchain and then connect MQTT devices sending IoT data to Blockchain using Watson IoT Platform. In an IoT network, the Blockchain can keep an immutable record of the history of sensors and devices. Come attend this hands on lab and learn on how Watson IoT Platform can help integrate your sensors and devices to Blockchain.",
+      "Room": 13,
+      "Day": "Thurs",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Advanced analytics",
+      "Session": 3285,
+      "Title": "Hands on introduction to Apache Spark Machine Learning",
+      "Abstract": "The hands on session will provide participants the basic knowledge of Apache Spark Machine Learning. The hands on labs teach participants how to start coding using Apache Spark in Juypter notebook on IBM Data Science Experience/ Bluemix cloud platform. The lab contains the basics to format data and train a machine-learning algorithm with Apache Spark. The lab will use the Alternating Least Square algorithm to build a recommender system based on online commerce data.",
+      "Room": 14,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 3328,
+      "Title": "Analyzing big data with BigR, BigSheets & TextAnalytics features on IBM BigInsights on Cloud",
+      "Abstract": "While the capacity of obtainable data continues to swiftly grow, the need for a scalable and analytics solution has become an essential tool to enhance business productivity and revenue. Users in this session will be introduced to high value in-Hadoop analytics features, including Big SQL, Big Sheets, Text Analytics, Big R and Machine Learning offered on IBM BigInsights on Cloud.",
+      "Room": 16,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Cloud",
+      "Session": 3335,
+      "Title": "Using IBM BigInsights high value BigR feature To Gain Insightful Knowledge From Tweets on Cloud",
+      "Abstract": "While the capacity of obtainable data continues to swiftly grow, the need for a scalable and analytics solution has become an essential tool to enhance business productivity and revenue. We would like to introduce Big R, a new platform that enables accessing, manipulating, analyzing, and visualizing data residing on a Hadoop cluster from the R user interface. Hence, users will be able to quickly prototype big data analytics routines without the need of learning a new programming paradigm. We will explore tweets by creating visualizations, predictive models, and test the predictive models.",
+      "Room": 16,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Data integration and governance",
+      "Session": 3354,
+      "Title": "3-in-a-box Data Preparation � DataWorks for Data Engineer, Data Scientist and Business Analysts",
+      "Abstract": "This session provides a tutorial for you to take a driver seat on our new and powerful cloud data integration solution. It�s designed to serve the needs of business analysts, data scientist and data engineers. This session provides end-to-end experience including data quality, data preparation, data integration and analytics. As a data engineers, you will be able to learn how you can simplify data integration tasks and improve productivity to deliver trusted data to the business. As a data scientist, you will learn about a integrated capabilities for data shaping, data preparation and machine learning. As business analyst, you will learn how leverage data shaping capabilities in a integrated experience with Watson Analytics.",
+      "Room": 12,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Data management platform",
+      "Session": 3512,
+      "Title": "Getting started with Big SQL features including Federation and Spark Integration",
+      "Abstract": "Big SQL is Industry-standard SQL query interface for Big Data. This query engine is derived from decades of IBM R&D investment in RDBMS including database parallelism and query optimization. Big SQL supports familiar tools and applications via standard JDBC and ODBC drivers. Through the technical introduction learn about all the features currently available in Big SQL. From this hands-on-lab learn how to query the data stored in HDFS and Hbase using Big SQL.",
+      "Room": 14,
+      "Day": "Mon",
+      "Time": "EVE"
+    },
+    {
+      "Topic": "Mobile",
+      "Session": 3520,
+      "Title": "Learn Swift for Rapid Enterprise Mobile App Development",
+      "Abstract": "Swift is the world's fastest-growing programming language, and has captured the imagination of coders worldwide - including enterprise development teams. This lab provides developers with the opportunity to discover what all the fuss is about, and learn how Swift can be used for server-side logic as well as client code.",
+      "Room": 7,
+      "Day": "Wed",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Mobile",
+      "Session": 3521,
+      "Title": "Quickly Build Microservices and Integrate Mobile Apps in the Cloud with Event-Driven Technology",
+      "Abstract": "Microservice architectures have emerged as the preferred way to engineer robust, scalable cloud-native solutions. Microservices encapsulate application logic in small, loosely coupled, distributed services communicating via language-agnostic APIs.",
+      "Room": 14,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Mobile",
+      "Session": 3522,
+      "Title": "Leveraging Watson and Mobile Services",
+      "Abstract": "This hands on lab will show how to build a Mobile application and add Watson Services to deliver advance capabilities that drive better use experiences.",
+      "Room": 11,
+      "Day": "Thurs",
+      "Time": "AM"
+    },
+    {
+      "Topic": "Mobile",
+      "Session": 3523,
+      "Title": "Adding Visual Recognition to Mobile Applications",
+      "Abstract": "This hands on lab will show how to add visual recognition to Mobile application to create innovative customer loyalty applications.",
+      "Room": 16,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Analytics business solutions",
+      "Session": 3548,
+      "Title": "Learn how to Build Application with the IBM Cognos TM1 SDK",
+      "Abstract": "This hands-on lab session will guide software developers and database administrators through tutorials about how they can use the IBM Cognos TM1 Software Development Kit (SDK) to address business needs that require a custom solution. Join us to see how the REST API can be utilized to integrate Cognos TM1 content with other components, how Java Extensions enable a developer to extend the capabilities of Cognos TM1 TurboIntegrator and how Cognos TM1 Web Websheets and Cognos TM1 Cube Views can be used in custom dashboard solutions. You'll also get a chance to meet members of the Cognos TM1",
+      "Room": 12,
+      "Day": "Mon",
+      "Time": "AM"
+    },
+    {
+      "Topic": "commerce",
+      "Session": 3584,
+      "Title": "The Marketers Gateway to Dynamic, Predictive Customer Insights",
+      "Abstract": "This session is designed for marketers who know that having the right insight to hand is key to acquiring, growing and retaining customers; but who find that extracting the needle from the haystack of data requires extensive effort. Join us to experience the power of a new solution, IBM Predictive Customer Analytics. The sophisticated analytics takes place in the cloud, and you will interact with an intuitive interface to which pertinent insights are dynamically pushed. It will help you understand and predict brand engagement among customers, while you can explore the data for additional insights (e.g., what high-value customers among your target segments intend to churn), then export target lists to your marketing automation tool.",
+      "Room": 5,
+      "Day": "Tues",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 3608,
+      "Title": "Introducing Watson Conversation",
+      "Abstract": "new copy over",
+      "Room": 12,
+      "Day": "Mon",
+      "Time": "PM"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 3615,
+      "Title": "Introducing Watson Company Analyzer",
+      "Abstract": "This hands-on lab will introduce you to Watson Company Analyzer.",
+      "Room": 16,
+      "Day": "Tues",
+      "Time": "Eve"
+    },
+    {
+      "Topic": "Watson offerings",
+      "Session": 3616,
+      "Title": "Hack Projects with Watson",
+      "Abstract": "",
+      "Room": 16,
+      "Day": "Thurs",
+      "Time": "AM"
+    }
+  ]
+}

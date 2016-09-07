@@ -39,4 +39,5 @@ module.exports = function() {
 
   this.use(this.router);
   this.use(express.errorHandler());
+
 }
