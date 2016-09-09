@@ -35,12 +35,6 @@ module.exports = function() {
 		global['wow-session-infoDB'] = db_connection;
 		cloudantUtils.checkDesignDoc(db_connection, "wow-session-info", "./cloudant-config/wow-session-info").then(function() {
 			console.log('Successfully checked the wow-session-info db design docs');
-			try {
-				var session_info_data = JSON.parse(fs.readFileSync("./cloudant-config/wow-session-info-data.json"));
-				console.log('Number of session info docs in file = ' + session_info_data.docs.length);
-			} catch (err) {
-				console.log(err);
-			}
 		});
 	}, function(err) {
 		console.log('******** Error connecting to wow-session-info : ' + err);

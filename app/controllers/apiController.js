@@ -29,31 +29,45 @@ apiController.webConversation = function() {
       return;
     }
 
-    noderedUtils.callNodeRedWebConversation(text, user_id).then(function(response) {
-      var intent = response.intents[0].intent;
-      var entity = response.entities[0];
+    noderedUtils.callNodeRedWebConversation(text, user_id).then(function(dialog) {
 
-      console.log(intent + ' ' + JSON.stringify(entity));
+      console.log(dialog);
+
+      var intent = dialog.intents[0].intent;
+      var entity = dialog.entities[0];
+      var message = dialog.output.text[0];
 
       if (intent && entity) {
         cloudantUtils.findSessionInfo(entity.value).then(function(session_info) {
           console.log(session_info);
+          var session_id = session_info.Session;
+
           if (intent === 'WHAT') {
-            that.res.status(200).json(session_info.Title);
+            var session_abstract = session_info.Title;
+            var msg = eval('`' + message + '`');
+            that.res.status(200).json(msg);
           }
           if (intent === 'WHERE') {
-            that.res.status(200).json('Room ' + session_info.Room);
+            var session_location = session_info.Room;
+            var msg = eval('`' + message + '`');
+            that.res.status(200).json(msg);
           }
           if (intent === 'WHEN') {
-            that.res.status(200).json(session_info.Day + ' in the ' + session_info.Time);
+            var session_day = session_info.Day;
+            var session_time = session_info.Time;
+            var msg = eval('`' + message + '`');
+            that.res.status(200).json(msg);
           }
+        }, function(err) {
+          console.log('ERROR: ' + err);
+          that.res.status(200).json(err);
         });
       } else {
         that.res.status(200).send('I\m sorry, but the information you provided wasn\'t found in the system');
       }
     }, function(err) {
       console.log('ERROR: ' + err);
-      that.res.send(200).json(err);
+      that.res.status(200).json(err);
     });
 }
 

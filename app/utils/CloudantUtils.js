@@ -1,7 +1,8 @@
 var Promise = require('promise');
 var fs = require('fs');
 
-module.exports.findSessionInfo = function(session_id) {
+exports.findSessionInfo = function(session_id) {
+  var ctrl = this;
   var session_info = global['wow-session-infoDB'];
 
   return new Promise(function(fulfill, reject) {
@@ -12,7 +13,7 @@ module.exports.findSessionInfo = function(session_id) {
       query : { q: 'session_id:' + session_id, include_docs : true }
     };
 
-    findDocByQueryIndex(db_request).then(function(data) {
+    ctrl.findDocByQueryIndex(db_request).then(function(data) {
       fulfill(data.rows[0].doc);
     }, function(err) {
       reject(err);
@@ -21,7 +22,7 @@ module.exports.findSessionInfo = function(session_id) {
 
 }
 
-module.exports.findDocByQueryIndex = function(db_request) {
+exports.findDocByQueryIndex = function(db_request) {
   return new Promise(function(fulfill, reject) {
 		try {
       db_request.db_connection.search(db_request.db_design, db_request.db_view, db_request.query, function(err, result) {
@@ -38,7 +39,7 @@ module.exports.findDocByQueryIndex = function(db_request) {
   });
 }
 
-module.exports.groupDataFromViewPromise = function(db_request) {
+exports.groupDataFromViewPromise = function(db_request) {
 
 	return new Promise(function(fulfill, reject) {
 		try {
@@ -63,7 +64,7 @@ module.exports.groupDataFromViewPromise = function(db_request) {
 	});
 }
 
-module.exports.readDataFromViewPromise = function(db_request) {
+exports.readDataFromViewPromise = function(db_request) {
 
 	return new Promise(function(fulfill, reject) {
 		try {
@@ -99,7 +100,7 @@ module.exports.readDataFromViewPromise = function(db_request) {
 	});
 }
 
-module.exports.checkDB = function(cloudant, db_name) {
+exports.checkDB = function(cloudant, db_name) {
 
   return new Promise(function(fulfill, reject) {
     cloudant.db.get(db_name, function(err, body) {
@@ -119,7 +120,7 @@ module.exports.checkDB = function(cloudant, db_name) {
 }
 
 // Function to check for a design document and create it if it doesn't exist
-module.exports.checkDesignDoc = function(db_connection, design_name, design_def) {
+exports.checkDesignDoc = function(db_connection, design_name, design_def) {
   return new Promise(function(fulfill, reject) {
     var design_doc_selector = { "selector" : { "_id" : "_design/" + design_name } };
     db_connection.find(design_doc_selector, function(err, result) {
