@@ -14,9 +14,28 @@ var apiController = new Controller();
 apiController.emotionalTone = function() {
   var that = this;
   // Define the database request parameters
+  var incoming = global['wow-incomingDB'];
+  var db_request = {
+    db_connection : incoming,
+    db_design : 'wow-incoming',
+    db_view : 'emotional-tone-view'
+  };
 
   // Call Cloudant to retrieve the data from the database View
-
+  cloudantUtils.groupDataFromViewPromise(db_request).then(function(data) {
+    // Format the response data properly for the graph
+    var response = {
+      keys : [],
+      values : []
+    }
+    data.forEach(function(set) {
+      response.keys.push(set.key);
+      response.values.push(set.value);
+    });
+    that.res.status(200).send(response);
+  }, function(err) {
+    that.res.status(500).json(err);
+  });
 }
 
 apiController.webConversation = function() {

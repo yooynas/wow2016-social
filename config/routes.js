@@ -16,7 +16,8 @@ module.exports = function routes() {
   this.match('/api/socialdata', 'api#social_data');
 
   this.match('/api/sentiment', 'api#sentiment');
-  this.match('/api/emotionaltone', 'api#emotional_tone');
+  // Add the emotional tone route here
+
   this.match('/api/emotionaltoneovertime', 'api#emotional_tone_over_time');
 
   this.match('/api/incoming', 'api#deleteIncoming', { via : "delete" });

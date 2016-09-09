@@ -38,7 +38,8 @@
                         </div>
                         <div class="col-sm-5">
                            <div class="well">
-                              <canvas id="emotional-tone-chart" height="210px"></canvas>
+                             <!-- Add the emotional-tone-chart canvas element here -->
+
                            </div>
                         </div>
                      </div>
@@ -65,6 +66,7 @@
         $.getJSON('/api/sentiment', function(data) {
           sentiment_chart = $('#sentiment-chart').initSentimentChart(data);
         });
+        // Add the Ajax call to get the emotionaltone data here
         $.getJSON('/api/emotionaltone', function(data) {
           classification_chart = $('#emotional-tone-chart').initEmotionalToneChart(data);
         });

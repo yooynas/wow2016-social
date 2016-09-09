@@ -69,6 +69,8 @@
 
       },
       initEmotionalToneChart : function(data) {
+
+        // Add the code to build the graph here.
         var ctx = this.get(0).getContext("2d");
 
         var labels = [];
