@@ -21,6 +21,11 @@
   }
 
   $.fn.extend({
+      initEmotionalToneChart : function(data) {
+      // Add the code to build the graph here.
+
+      // End of Add Code...
+      },
       initSentimentChart: function(data) {
         var ctx = this.get(0).getContext("2d");
         var labels = [];
@@ -67,43 +72,6 @@
           }
         });
 
-      },
-      initEmotionalToneChart : function(data) {
-
-        // Add the code to build the graph here.
-        var ctx = this.get(0).getContext("2d");
-
-        var labels = [];
-        data.keys.forEach(function(e) {
-          labels.push(emotions_hash[e]);
-        });
-        var config = {
-            type: 'doughnut',
-            data: {
-                datasets: [{
-                    data: data.values,
-                    backgroundColor: colors
-                }],
-                labels: labels
-            },
-            options: {
-                responsive: true,
-                legend: {
-                    position: 'top',
-                },
-                title: {
-                    display: true,
-                    text: 'Overall Social Tone',
-                    fontColor : '#2C3E50',
-                    fontSize: 14
-                },
-                animation: {
-                    animateScale: true,
-                    animateRotate: true
-                }
-            }
-        }
-        return new Chart(ctx, config);
       },
       initEmotionalToneOverTimeChart : function(data) {
         var ctx = this.get(0).getContext("2d");

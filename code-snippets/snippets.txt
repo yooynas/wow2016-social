@@ -1,0 +1,113 @@
+******* Cloudant Map Reduce Function *************
+
+function (doc) {
+  // Extract the Emotional Tone value from the document
+  var t = doc.tone.document_tone.tone_categories[0].tones;
+  var x = 0;
+  var h;
+  // Loop over the emotional tones and determine the highest score.
+  for (var i=0;i<t.length;i++) {
+    if (t[i].score > x) {
+      x = t[i].score;
+      h = t[i].tone_id;
+    }
+  }
+// Emit only the highest tone_id as the key to the map function.
+emit(h, 1);
+
+***** End *****
+
+******  Cloudant DB Connection information ******
+
+var incoming = global['wow-incomingDB'];
+var db_request = {
+  db_connection : incoming,
+  db_design : 'wow-incoming',
+  db_view : 'emotional-tone-view'
+};
+
+***** End *****
+
+****** Call Cloudant Promise Call **********
+
+cloudantUtils.groupDataFromViewPromise(db_request).then(function(data) {
+    // Format the response data properly for the graph
+
+}, function(err) {
+   that.res.status(500).json(err);
+});
+
+***** End *****
+
+******* Process Cloudant Response that goes inside the Promise response function
+
+var response = {
+      keys : [],
+      values : []
+    }
+    data.forEach(function(set) {
+      response.keys.push(set.key);
+      response.values.push(set.value);
+    });
+    that.res.status(200).send(response);
+
+***** End *****
+
+******* Additonal route that needs to be added to the routes.js file *********
+
+this.match('/api/emotionaltone', 'api#emotional_tone');
+
+***** End *****
+
+******* Canvas element for the dashboard.html.ejs file **********
+
+<canvas id="emotional-tone-chart" height="210px"></canvas>
+
+***** End *****
+
+******* Call to the api and building of the chart for the dashboard.html.ejs file **********
+
+$.getJSON('/api/emotionaltone', function(data) {
+  classification_chart = $('#emotional-tone-chart')
+    .initEmotionalToneChart(data);
+});
+
+***** End *****
+
+******* Build the chart function for the dashboard.js file **********
+
+var ctx = this.get(0).getContext("2d");
+
+      var labels = [];
+      data.keys.forEach(function(e) {
+        labels.push(emotions_hash[e]);
+      });
+      var config = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: data.values,
+                  backgroundColor: colors
+              }],
+              labels: labels
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+                  text: 'Overall Social Tone',
+                  fontColor : '#2C3E50',
+                  fontSize: 14
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      }
+      return new Chart(ctx, config);
+
+***** End *****

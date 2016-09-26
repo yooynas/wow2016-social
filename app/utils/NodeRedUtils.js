@@ -1,6 +1,8 @@
 var Promise = require('promise');
 var Request = require('request');
 
+// Function to call node-red conversation end-point.
+// Require the node-red-instance-url to be set to a valid URL.
 module.exports.callNodeRedWebConversation = function(text, user_id) {
 
   var nr_url = global.app_params['node-red-instance-url'];

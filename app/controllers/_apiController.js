@@ -137,30 +137,6 @@ apiController.sentiment = function() {
   });
 }
 
-apiController.emotionalTone = function() {
-  var that = this;
-  var incoming = global['wow-incomingDB'];
-  var db_request = {
-    db_connection : incoming,
-    db_design : 'wow-incoming',
-    db_view : 'emotional-tone-view'
-  };
-
-  cloudantUtils.groupDataFromViewPromise(db_request).then(function(data) {
-    var response = {
-      keys : [],
-      values : []
-    }
-    data.forEach(function(set) {
-      response.keys.push(set.key);
-      response.values.push(set.value);
-    });
-    that.res.status(200).send(response);
-  }, function(err) {
-    that.res.status(500).json(err);
-  });
-}
-
 apiController.emotionalToneOverTime = function() {
   var that = this;
   var incoming = global['wow-incomingDB'];

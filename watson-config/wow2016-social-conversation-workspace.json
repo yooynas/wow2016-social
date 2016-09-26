@@ -1,1 +1,1469 @@
-{"name":"wow-2016-social","created":"2016-08-12T18:55:07.190Z","intents":[{"intent":"GREETING","created":"2016-08-15T00:10:36.556Z","examples":[{"text":"Hello","created":"2016-08-15T00:10:36.556Z"},{"text":"Hey","created":"2016-08-15T00:10:36.556Z"},{"text":"Hi","created":"2016-08-15T00:10:36.556Z"},{"text":"Please Help","created":"2016-08-15T00:10:36.556Z"},{"text":"Whatsup","created":"2016-08-15T00:10:36.556Z"}],"description":null},{"intent":"WHAT","created":"2016-08-12T19:17:28.171Z","examples":[{"text":"give me a description of the analytics session","created":"2016-08-12T19:17:28.224Z"},{"text":"is there any pre-reqs for the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"is there a session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"tell me about the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the analytics session about","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the description of the analytics session","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the session on analytics about","created":"2016-08-12T19:17:28.224Z"},{"text":"what sessions are there on analytics","created":"2016-08-12T19:17:28.224Z"}],"description":null},{"intent":"WHEN","created":"2016-08-12T19:17:28.171Z","examples":[{"text":"how late is the lab on social crm","created":"2016-08-12T19:17:28.224Z"},{"text":"how late is the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"is there a session on analytics this week","created":"2016-08-12T19:17:28.224Z"},{"text":"is there a session on analytics today","created":"2016-08-12T19:17:28.224Z"},{"text":"is there a session on analytics tomorrow","created":"2016-08-12T19:17:28.224Z"},{"text":"is the session on analytics in the afternoon","created":"2016-08-12T19:17:28.224Z"},{"text":"is the session on analytics in the morning","created":"2016-08-12T19:17:28.224Z"},{"text":"is the session on analytics today","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on friday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on monday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on saturday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on sunday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on thursday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on tuesday","created":"2016-08-12T19:17:28.224Z"},{"text":"what is the conference schedule on wednesday","created":"2016-08-12T19:17:28.224Z"},{"text":"what time is session a123","created":"2016-08-12T19:17:28.224Z"},{"text":"what time is the event tonight","created":"2016-08-12T19:17:28.224Z"},{"text":"what time is the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"what time this the lab on social crm","created":"2016-08-12T19:17:28.224Z"},{"text":"when is the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"when is the social crm lab","created":"2016-08-12T19:17:28.224Z"}],"description":null},{"intent":"WHERE","created":"2016-08-12T19:17:28.171Z","examples":[{"text":"is there a map of the conference","created":"2016-08-12T19:17:28.224Z"},{"text":"where is session a123","created":"2016-08-12T19:17:28.224Z"},{"text":"where is the lab session on social crm","created":"2016-08-12T19:17:28.224Z"},{"text":"where is the session on analytics","created":"2016-08-12T19:17:28.224Z"},{"text":"where is the session on big data","created":"2016-08-12T19:17:28.224Z"},{"text":"where is the session on social crm","created":"2016-08-12T19:17:28.224Z"}],"description":null}],"entities":[{"entity":"day_of_week","values":[{"value":"friday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["fri"]},{"value":"monday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["mon"]},{"value":"saturday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["sat"]},{"value":"sunday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["sun"]},{"value":"thursday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["thu"]},{"value":"today","created":"2016-08-15T00:05:38.756Z","metadata":null,"synonyms":["tod"]},{"value":"tomorrow","created":"2016-08-15T00:05:44.328Z","metadata":null,"synonyms":["tom"]},{"value":"tuesday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["tue"]},{"value":"wednesday","created":"2016-08-12T19:19:33.357Z","metadata":null,"synonyms":["wed"]}],"created":"2016-08-12T19:19:33.357Z","open_list":false,"description":null},{"entity":"session_id","values":[{"value":"1053","created":"2016-08-12T19:18:10.329Z","metadata":null,"synonyms":["Weathering the Storm"]},{"value":"1118","created":"2016-09-08T14:18:03.622Z","metadata":null,"synonyms":["Into the Storm"]},{"value":"1133","created":"2016-09-08T14:18:08.589Z","metadata":null,"synonyms":[]},{"value":"1140","created":"2016-09-08T14:18:50.731Z","metadata":null,"synonyms":["Deploy and Explore IT Analytics"]},{"value":"1196","created":"2016-09-08T14:18:58.863Z","metadata":null,"synonyms":["Supporting Data Governance"]},{"value":"1245","created":"2016-08-12T19:18:10.329Z","metadata":null,"synonyms":["Watson Social CRM"]},{"value":"1264","created":"2016-09-08T14:19:08.389Z","metadata":null,"synonyms":["Control IoT devices via Voice"]},{"value":"1295","created":"2016-09-08T14:19:16.201Z","metadata":null,"synonyms":["IDAA on Cloud"]},{"value":"1307","created":"2016-09-08T14:21:33.473Z","metadata":null,"synonyms":["Watson Analytics Hands"]}],"created":"2016-08-12T19:18:10.329Z","open_list":false,"description":null},{"entity":"session_type","values":[{"value":"Advanced analytics","created":"2016-08-12T19:18:32.529Z","metadata":null,"synonyms":[]},{"value":"Analytics business solutions","created":"2016-09-08T14:23:19.805Z","metadata":null,"synonyms":[]},{"value":"Cloud","created":"2016-09-08T14:22:29.444Z","metadata":null,"synonyms":[]},{"value":"Commerce","created":"2016-09-08T14:24:05.235Z","metadata":null,"synonyms":[]},{"value":"Data integration and governance","created":"2016-09-08T14:22:58.089Z","metadata":null,"synonyms":[]},{"value":"Data management platform","created":"2016-09-08T14:22:47.494Z","metadata":null,"synonyms":[]},{"value":"Enterprise content management","created":"2016-08-12T19:18:32.529Z","metadata":null,"synonyms":["ECM"]},{"value":"Internet of Things","created":"2016-09-08T14:23:33.247Z","metadata":null,"synonyms":["IOT"]},{"value":"Mobile","created":"2016-09-08T14:23:56.418Z","metadata":null,"synonyms":[]},{"value":"Watson offerings","created":"2016-09-08T14:23:05.346Z","metadata":null,"synonyms":["Watson"]}],"created":"2016-08-12T19:18:32.529Z","open_list":false,"description":null},{"entity":"time_of_day","values":[{"value":"10AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"10PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"11AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"11PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"12AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"12PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"1AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"1PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"2AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"2PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"3AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"3PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"4AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"4PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"5AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"5PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"6AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"6PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"7AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"7PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"8AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"8PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"9AM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"9PM","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"afternoon","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"early afternoon","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"early evening","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"early morning","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"evening","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"lunch time","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"midday","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"midnight","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"morning","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"noon","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]},{"value":"tonight","created":"2016-08-12T19:22:24.013Z","metadata":null,"synonyms":[]}],"created":"2016-08-12T19:22:24.013Z","open_list":false,"description":null}],"language":"en","metadata":null,"modified":"2016-09-08T14:32:14.752Z","description":"Conversation API for World Of Watson 2016 Social CRM Lab","dialog_nodes":[{"go_to":null,"output":{"text":"Hello, I'm a WoW 2016 Bot and I can help you with what, where and when type questions..."},"parent":null,"context":null,"created":"2016-08-15T16:46:16.462Z","metadata":null,"conditions":"#GREETING","description":null,"dialog_node":"node_1_1471279576299","previous_sibling":"node_4_1471219918957"},{"go_to":null,"output":{"text":"Session ${session_id} is about ${session_abstract}."},"parent":null,"context":null,"created":"2016-08-15T00:11:59.177Z","metadata":null,"conditions":"#WHAT","description":null,"dialog_node":"node_4_1471219918957","previous_sibling":"node_3_1471219864730"},{"go_to":null,"output":{"text":"Session ${session_id} will be held in room ${session_location}."},"parent":null,"context":null,"created":"2016-08-15T00:11:04.958Z","metadata":null,"conditions":"#WHERE","description":null,"dialog_node":"node_3_1471219864730","previous_sibling":"node_1_1471219593024"},{"go_to":null,"output":{"text":"Session ${session_id} will be held on ${session_day} at ${session_time}."},"parent":null,"context":null,"created":"2016-08-15T00:06:33.248Z","metadata":null,"conditions":"#WHEN","description":null,"dialog_node":"node_1_1471219593024","previous_sibling":null},{"go_to":null,"output":{"text":"Sorry, don't quite get what you're asking"},"parent":null,"context":null,"created":"2016-08-15T00:06:44.303Z","metadata":null,"conditions":"anything_else","description":null,"dialog_node":"node_2_1471219603605","previous_sibling":"node_1_1471279576299"}],"workspace_id":"14678b35-9071-4e5d-9e64-dfc52ea56fd5"}
+{
+  "name": "wow-2016-social",
+  "created": "2016-08-12T18:55:07.190Z",
+  "intents": [
+    {
+      "intent": "GREETING",
+      "created": "2016-08-15T00:10:36.556Z",
+      "examples": [
+        {
+          "text": "Hello",
+          "created": "2016-08-15T00:10:36.556Z"
+        },
+        {
+          "text": "Hey",
+          "created": "2016-08-15T00:10:36.556Z"
+        },
+        {
+          "text": "Hi",
+          "created": "2016-08-15T00:10:36.556Z"
+        },
+        {
+          "text": "Please Help",
+          "created": "2016-08-15T00:10:36.556Z"
+        },
+        {
+          "text": "Whatsup",
+          "created": "2016-08-15T00:10:36.556Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "WHAT",
+      "created": "2016-08-12T19:17:28.171Z",
+      "examples": [
+        {
+          "text": "give me a description of the analytics session",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is there any pre-reqs for the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is there a session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "tell me about the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the analytics session about",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the description of the analytics session",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the session on analytics about",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what sessions are there on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "WHEN",
+      "created": "2016-08-12T19:17:28.171Z",
+      "examples": [
+        {
+          "text": "how late is the lab on social crm",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "how late is the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is there a session on analytics this week",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is there a session on analytics today",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is there a session on analytics tomorrow",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is the session on analytics in the afternoon",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is the session on analytics in the morning",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "is the session on analytics today",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on friday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on monday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on saturday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on sunday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on thursday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on tuesday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what is the conference schedule on wednesday",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what time is session a123",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what time is the event tonight",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what time is the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "what time this the lab on social crm",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "when is the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "when is the social crm lab",
+          "created": "2016-08-12T19:17:28.224Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "WHERE",
+      "created": "2016-08-12T19:17:28.171Z",
+      "examples": [
+        {
+          "text": "is there a map of the conference",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "where is session a123",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "where is the lab session on social crm",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "where is the session on analytics",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "where is the session on big data",
+          "created": "2016-08-12T19:17:28.224Z"
+        },
+        {
+          "text": "where is the session on social crm",
+          "created": "2016-08-12T19:17:28.224Z"
+        }
+      ],
+      "description": null
+    }
+  ],
+  "updated": "2016-09-19T19:17:44.394Z",
+  "entities": [
+    {
+      "entity": "day_of_week",
+      "values": [
+        {
+          "value": "friday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "fri"
+          ]
+        },
+        {
+          "value": "monday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "mon"
+          ]
+        },
+        {
+          "value": "saturday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "sat"
+          ]
+        },
+        {
+          "value": "sunday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "sun"
+          ]
+        },
+        {
+          "value": "thursday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "thu"
+          ]
+        },
+        {
+          "value": "today",
+          "created": "2016-08-15T00:05:38.756Z",
+          "metadata": null,
+          "synonyms": [
+            "tod"
+          ]
+        },
+        {
+          "value": "tomorrow",
+          "created": "2016-08-15T00:05:44.328Z",
+          "metadata": null,
+          "synonyms": [
+            "tom"
+          ]
+        },
+        {
+          "value": "tuesday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "tue"
+          ]
+        },
+        {
+          "value": "wednesday",
+          "created": "2016-08-12T19:19:33.357Z",
+          "metadata": null,
+          "synonyms": [
+            "wed"
+          ]
+        }
+      ],
+      "created": "2016-08-12T19:19:33.357Z",
+      "open_list": false,
+      "description": null
+    },
+    {
+      "entity": "session_id",
+      "values": [
+        {
+          "value": "1053",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Weathering the Storm"
+          ]
+        },
+        {
+          "value": "1118",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Into the Storm"
+          ]
+        },
+        {
+          "value": "1133",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Advanced Watson App development using Node-RED"
+          ]
+        },
+        {
+          "value": "1140",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Deploy & Explore IT Analytics Use Cases with IBM Capacity Management Analytics"
+          ]
+        },
+        {
+          "value": "1196",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Supporting Data Governance thru Data Lineage and Risk Reporting"
+          ]
+        },
+        {
+          "value": "1245",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Build a Powered by Watson Social CRM Cognitive Application"
+          ]
+        },
+        {
+          "value": "1264",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Control IoT devices via Voice via Watson API's"
+          ]
+        },
+        {
+          "value": "1295",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IDAA on Cloud"
+          ]
+        },
+        {
+          "value": "1307",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Watson Analytics Hands on Workshop"
+          ]
+        },
+        {
+          "value": "1320",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "A Primer for Large Scale OLAP Analytics with IBM Cognos TM1 & IBM Planning Analytics"
+          ]
+        },
+        {
+          "value": "1321",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Watson IoT Developer Lab"
+          ]
+        },
+        {
+          "value": "1331",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Sharding SQL and NoSQL in IBM's IoT engine"
+          ]
+        },
+        {
+          "value": "1343",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Making and Presenting TM1 plans and scorecards easy with Performance Modeler and Cognos Insight"
+          ]
+        },
+        {
+          "value": "1415",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Test Drive a New Self-service Planning Capability in IBM Planning Analytics"
+          ]
+        },
+        {
+          "value": "1429",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Deep Dive into migration procedure from PureData System for Analytics to DashDB."
+          ]
+        },
+        {
+          "value": "1460",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Put Data to Work with IBM DataWorks"
+          ]
+        },
+        {
+          "value": "1567",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Cognos Analytics Reporting - Designing Effective Dashboards Best Practices"
+          ]
+        },
+        {
+          "value": "1614",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Cognos Analytics Reporting - Adding Conditional Formatting to Your Reports"
+          ]
+        },
+        {
+          "value": "1638",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Building a Word2Vec Model with Twitter Data using The Data Science Experience"
+          ]
+        },
+        {
+          "value": "1718",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Open Source, Open Labs, with the Big Data Dudes"
+          ]
+        },
+        {
+          "value": "1741",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Enhance your Navigator mobile and desktop applications with Watson analytics"
+          ]
+        },
+        {
+          "value": "1746",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "BI Modeling Basics in Framework Manager"
+          ]
+        },
+        {
+          "value": "1748",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Deploy and Experience Hybrid Cloud infrastructure for Data Analytics"
+          ]
+        },
+        {
+          "value": "1752",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Predictive Modeling Without a Ph.D."
+          ]
+        },
+        {
+          "value": "1761",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "See IBM Cloudant Geospatial in Action"
+          ]
+        },
+        {
+          "value": "1763",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Using IBM SPSS Statistics and R Programming Language Together"
+          ]
+        },
+        {
+          "value": "1766",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "DB2 High Availability Disaster Recovery (HADR) with Single Standby Database"
+          ]
+        },
+        {
+          "value": "1767",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Learn to use built-in analytics in DB2 11 and Watson APIs"
+          ]
+        },
+        {
+          "value": "1775",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Advanced Modeling Techniques in Framework Manager"
+          ]
+        },
+        {
+          "value": "1783",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "See IBM Graph in Action"
+          ]
+        },
+        {
+          "value": "1791",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Cognos Analytics 11.0: Discovering What's New"
+          ]
+        },
+        {
+          "value": "1817",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Interactive Reporting in IBM Cognos Analytics"
+          ]
+        },
+        {
+          "value": "1838",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Cognos Analytics Workshop: Introduction to Modern Self-Service BI"
+          ]
+        },
+        {
+          "value": "1840",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Predictive Analytics Workshop: Forward-Looking Business Intelligence"
+          ]
+        },
+        {
+          "value": "1865",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Spark for Cloudant analytics"
+          ]
+        },
+        {
+          "value": "1874",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Clustering and Association Modeling Using IBM SPSS Modeler"
+          ]
+        },
+        {
+          "value": "1901",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Introduction to IBM Content Navigator plug-in development"
+          ]
+        },
+        {
+          "value": "1909",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Overview of IBM Cognos Dynamic Cubes"
+          ]
+        },
+        {
+          "value": "1920",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Move the Right Thing: IBM StoredIQ Data Assessment, Cleanup, and Cloud Migration"
+          ]
+        },
+        {
+          "value": "1932",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "READ: Real-Time Visualizations for APIs and Streams"
+          ]
+        },
+        {
+          "value": "1936",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Deploying IBM SPSS Modeler Streams for Scoring Within the PCI Environment"
+          ]
+        },
+        {
+          "value": "1959",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Modernization to data warehousing and analytics using fluid query"
+          ]
+        },
+        {
+          "value": "1961",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Case Manager and Box"
+          ]
+        },
+        {
+          "value": "1964",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Efficient data load technique's from heterogenous data sources."
+          ]
+        },
+        {
+          "value": "1969",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Watson Knowlecge Studio"
+          ]
+        },
+        {
+          "value": "2043",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Training Watson to See Retail"
+          ]
+        },
+        {
+          "value": "2095",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "From Zero to Social Analytics Hero with Watson Analytics for Social Media"
+          ]
+        },
+        {
+          "value": "2100",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Easily used and clearly present for data analysis by Watson Analytics"
+          ]
+        },
+        {
+          "value": "2135",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Advanced Configurations for typical Customer Production environments with IBM Stewardship Center"
+          ]
+        },
+        {
+          "value": "2146",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Build a cognitive capture application using Datacap Insight Edition"
+          ]
+        },
+        {
+          "value": "2160",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Open Source Predictive Analytics on Cloud - Use case with Spark, Bluemix & Data Scientist Workbench"
+          ]
+        },
+        {
+          "value": "2178",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Learn Hands-on Spark"
+          ]
+        },
+        {
+          "value": "2182",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Working with DB2 for z/OS in the Cloud era"
+          ]
+        },
+        {
+          "value": "2187",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Learn Data Science Hands-on"
+          ]
+        },
+        {
+          "value": "2202",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Use your mobile device to automatically capture forms, checks or IDs using Datacap Mobile"
+          ]
+        },
+        {
+          "value": "2235",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Big Data, Big Security Problems"
+          ]
+        },
+        {
+          "value": "2247",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "How to Build Expert Storybooks in Watson Analytics"
+          ]
+        },
+        {
+          "value": "2268",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Understanding and Using the new innovative web presentation layer for TM1"
+          ]
+        },
+        {
+          "value": "2384",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Cloudy with a chance of real time data movement"
+          ]
+        },
+        {
+          "value": "2468",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Take Your Legal Processes To The Cloud ( IBM eDiscovery on Cloud )"
+          ]
+        },
+        {
+          "value": "2539",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Optimize Data Ingestion and transformation for the Data Lake"
+          ]
+        },
+        {
+          "value": "2573",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "End to End Data Governance using IBM Infosphere Information Server and IBM Infosphere MDM"
+          ]
+        },
+        {
+          "value": "2639",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "How to Leverage Hierarchies in Planning Analytics"
+          ]
+        },
+        {
+          "value": "2653",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Watson IoT Platform - IBM Watson IoT Real Time Insights Walk Through"
+          ]
+        },
+        {
+          "value": "2673",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Enable Cognitive Search by pairing Watson Explorer on premise with the Watson Developer Cloud"
+          ]
+        },
+        {
+          "value": "2690",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Real Time Traffic Forecasting with Spatio-Temporal Analytics Using Real Data"
+          ]
+        },
+        {
+          "value": "2691",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Building a 360 degree view with Watson Explorer using structured & unstructured banking data"
+          ]
+        },
+        {
+          "value": "2711",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Social Media Management"
+          ]
+        },
+        {
+          "value": "2723",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Advanced analytics in dashDB for Developers"
+          ]
+        },
+        {
+          "value": "2744",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Crime and Punishment: Cognitive decision making solves the case"
+          ]
+        },
+        {
+          "value": "2752",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Unleash the sensor data on your Smart phone with IBM Watson IoT platform"
+          ]
+        },
+        {
+          "value": "2780",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Device Management API's with IBM Watson IoT Platform Walk Through"
+          ]
+        },
+        {
+          "value": "2803",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Cognos Analysis for Microsoft Excel (CAFE) for IBM Cognos TM1 Excel Planning and Analysis"
+          ]
+        },
+        {
+          "value": "2823",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IoT Real-Time Analytics on the Edge"
+          ]
+        },
+        {
+          "value": "2843",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Understanding IBM InfoSphere Data Replication Q Replication performance - where is the bottleneck?"
+          ]
+        },
+        {
+          "value": "2915",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "End to End Data Quality Management and Unified Data Stewardship"
+          ]
+        },
+        {
+          "value": "2926",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Data Science Experience hands on Introduction"
+          ]
+        },
+        {
+          "value": "2941",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Data Science Experience Advanced Workflow from Notebooks to RStudio"
+          ]
+        },
+        {
+          "value": "2945",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "IBM Security Guardium GDPR Accelerator LAB"
+          ]
+        },
+        {
+          "value": "2956",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Introduction to stream computing: exploring IBM Streams"
+          ]
+        },
+        {
+          "value": "3029",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "From lab to production: Scale up your data science with DSX"
+          ]
+        },
+        {
+          "value": "3044",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Building Cognitive Solutions using Bluemix and IBM Case Manager"
+          ]
+        },
+        {
+          "value": "3094",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Building services on Bluemix for seamless integration of applications in Hybrid cloud"
+          ]
+        },
+        {
+          "value": "3141",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Secrets of the Pros: Using Data Server Manager to monitor, manage and mitigate performance problems"
+          ]
+        },
+        {
+          "value": "3200",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Simplify Your Life With Your Own Watson Personal Assistant"
+          ]
+        },
+        {
+          "value": "3238",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "How'd They Do That? Disrupting the World of Parts Replacement Through the Cloud"
+          ]
+        },
+        {
+          "value": "3281",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Hands on introduction to Apache Spark"
+          ]
+        },
+        {
+          "value": "3282",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Fun with IBM Watson IoT Platform and IBM Blockchain"
+          ]
+        },
+        {
+          "value": "3285",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Hands on introduction to Apache Spark Machine Learning"
+          ]
+        },
+        {
+          "value": "3328",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Analyzing big data with BigR, BigSheets & TextAnalytics features on IBM BigInsights on Cloud"
+          ]
+        },
+        {
+          "value": "3335",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Using IBM BigInsights high value BigR feature To Gain Insightful Knowledge From Tweets on Cloud"
+          ]
+        },
+        {
+          "value": "3354",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "3-in-a-box Data Preparation DataWorks for Data Engineer, Data Scientist and Business Analysts"
+          ]
+        },
+        {
+          "value": "3512",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Getting started with Big SQL features including Federation and Spark Integration"
+          ]
+        },
+        {
+          "value": "3520",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Learn Swift for Rapid Enterprise Mobile App Development"
+          ]
+        },
+        {
+          "value": "3521",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Quickly Build Microservices and Integrate Mobile Apps in the Cloud with Event-Driven Technology"
+          ]
+        },
+        {
+          "value": "3522",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Leveraging Watson and Mobile Services"
+          ]
+        },
+        {
+          "value": "3523",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Adding Visual Recognition to Mobile Applications"
+          ]
+        },
+        {
+          "value": "3548",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Learn how to Build Application with the IBM Cognos TM1 SDK"
+          ]
+        },
+        {
+          "value": "3584",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "The Marketers Gateway to Dynamic, Predictive Customer Insights"
+          ]
+        },
+        {
+          "value": "3608",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Introducing Watson Conversation"
+          ]
+        },
+        {
+          "value": "3615",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Introducing Watson Company Analyzer"
+          ]
+        },
+        {
+          "value": "3616",
+          "created": "2016-09-08T14:18:58.863Z",
+          "metadata": null,
+          "synonyms": [
+            "Hack Projects with Watson"
+          ]
+        }
+      ],
+      "created": "2016-08-12T19:18:10.329Z",
+      "open_list": false,
+      "description": null
+    },
+    {
+      "entity": "session_type",
+      "values": [
+        {
+          "value": "Advanced analytics",
+          "created": "2016-08-12T19:18:32.529Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Analytics business solutions",
+          "created": "2016-09-08T14:23:19.805Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Cloud",
+          "created": "2016-09-08T14:22:29.444Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Commerce",
+          "created": "2016-09-08T14:24:05.235Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Data integration and governance",
+          "created": "2016-09-08T14:22:58.089Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Data management platform",
+          "created": "2016-09-08T14:22:47.494Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Enterprise content management",
+          "created": "2016-08-12T19:18:32.529Z",
+          "metadata": null,
+          "synonyms": [
+            "ECM"
+          ]
+        },
+        {
+          "value": "Internet of Things",
+          "created": "2016-09-08T14:23:33.247Z",
+          "metadata": null,
+          "synonyms": [
+            "IOT"
+          ]
+        },
+        {
+          "value": "Mobile",
+          "created": "2016-09-08T14:23:56.418Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "Watson offerings",
+          "created": "2016-09-08T14:23:05.346Z",
+          "metadata": null,
+          "synonyms": [
+            "Watson"
+          ]
+        }
+      ],
+      "created": "2016-08-12T19:18:32.529Z",
+      "open_list": false,
+      "description": null
+    },
+    {
+      "entity": "time_of_day",
+      "values": [
+        {
+          "value": "10AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "10PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "11AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "11PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "12AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "12PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "1AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "1PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "2AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "2PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "3AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "3PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "4AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "4PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "5AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "5PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "6AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "6PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "7AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "7PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "8AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "8PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "9AM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "9PM",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "afternoon",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "early afternoon",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "early evening",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "early morning",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "evening",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "lunch time",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "midday",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "midnight",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "morning",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "noon",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "value": "tonight",
+          "created": "2016-08-12T19:22:24.013Z",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
+      "created": "2016-08-12T19:22:24.013Z",
+      "open_list": false,
+      "description": null
+    }
+  ],
+  "language": "en",
+  "metadata": null,
+  "description": "Conversation API for World Of Watson 2016 Social CRM Lab",
+  "dialog_nodes": [
+    {
+      "go_to": null,
+      "output": {
+        "text": "Hello, I'm a WoW 2016 Bot and I can help you with what, where and when type questions..."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-08-15T16:46:16.462Z",
+      "metadata": null,
+      "conditions": "#GREETING",
+      "description": null,
+      "dialog_node": "node_1_1471279576299",
+      "previous_sibling": "node_4_1471219918957"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "Session ${session_id} is about ${session_abstract}."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-08-15T00:11:59.177Z",
+      "metadata": null,
+      "conditions": "#WHAT",
+      "description": null,
+      "dialog_node": "node_4_1471219918957",
+      "previous_sibling": "node_3_1471219864730"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "Session ${session_id} will be held in room ${session_location}."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-08-15T00:11:04.958Z",
+      "metadata": null,
+      "conditions": "#WHERE",
+      "description": null,
+      "dialog_node": "node_3_1471219864730",
+      "previous_sibling": "node_1_1471219593024"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "Session ${session_id} will be held on ${session_day} at ${session_time}."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-08-15T00:06:33.248Z",
+      "metadata": null,
+      "conditions": "#WHEN",
+      "description": null,
+      "dialog_node": "node_1_1471219593024",
+      "previous_sibling": null
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "Sorry, don't quite get what you're asking"
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-08-15T00:06:44.303Z",
+      "metadata": null,
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "node_2_1471219603605",
+      "previous_sibling": "node_1_1471279576299"
+    }
+  ],
+  "workspace_id": "14678b35-9071-4e5d-9e64-dfc52ea56fd5"
+}

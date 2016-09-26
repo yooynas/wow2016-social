@@ -5,17 +5,13 @@
       "map": "function (doc) {\n  var dt = new Date(doc.created_at);\n  emit([dt.getFullYear(), dt.getMonth(), dt.getDate()], 1);\n}",
       "reduce": "_count"
     },
-    "classification-view": {
-      "reduce": "_count",
-      "map": "function (doc) {\n  emit(doc.nlc.top_class, 1);\n}"
-    },
     "emotional-tone-overtime-view": {
       "reduce": "_count",
       "map": "function (doc) {\n  var dt = new Date(doc.created_at);\n  var t = doc.tone.document_tone.tone_categories[0].tones;\n  var x = 0;\n  var h;\n  for (var i=0;i<t.length;i++) {\n    if (t[i].score > x) {\n      x = t[i].score;\n      h = t[i].tone_id;\n    }\n  }\n  emit([dt.getFullYear(), dt.getMonth(), dt.getDate(),h], 1);\n}"
     },
-    "emotional-tone-view": {
+    "sentiment-view": {
       "reduce": "_count",
-      "map": "function (doc) {\n  var t = doc.tone.document_tone.tone_categories[0].tones;\n  var x = 0;\n  var h;\n  for (var i=0;i<t.length;i++) {\n    if (t[i].score > x) {\n      x = t[i].score;\n      h = t[i].tone_id;\n    }\n  }\n  emit(h, 1);\n}"
+      "map": "function (doc) {\n  emit(doc.sentiment.type, 1);\n}"
     }
   },
   "language": "javascript"

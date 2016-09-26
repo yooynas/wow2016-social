@@ -8,19 +8,20 @@ var locomotive = require('locomotive')
   , Controller = locomotive.Controller;
 
 var pagesController = new Controller();
+var app_title = 'Watson Social CRM Dashboard';
 
 pagesController.dashboard = function() {
-  this.title = 'Watson Social CRM Dashboard';
+  this.title = app_title;
   this.render();
 }
 
 pagesController.chat = function() {
-  this.title = 'Watson Social CRM Dashboard';
+  this.title = app_title;
   this.render();
 }
 
 pagesController.data = function() {
-  this.title = 'Watson Social CRM Dashboard';
+  this.title = app_title;
   this.render();
 }
 

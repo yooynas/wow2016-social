@@ -62,16 +62,16 @@
       <script src="/js/dashboard.js"></script>
       <script>
       $(document).ready(function() {
-        var classification_chart;
+        // Add the getJson call to get the emotionaltone data here and build the chart
+
+
+        // API call to retieve the sentiment and build the chart
         $.getJSON('/api/sentiment', function(data) {
-          sentiment_chart = $('#sentiment-chart').initSentimentChart(data);
+          var sentiment_chart = $('#sentiment-chart').initSentimentChart(data);
         });
-        // Add the Ajax call to get the emotionaltone data here
-        $.getJSON('/api/emotionaltone', function(data) {
-          classification_chart = $('#emotional-tone-chart').initEmotionalToneChart(data);
-        });
+        // API call to retrive the emotions over time and build the chart
         $.getJSON('/api/emotionaltoneovertime', function(data) {
-          classification_chart = $('#emotional-tone-overtime-chart').initEmotionalToneOverTimeChart(data);
+          var classification_chart = $('#emotional-tone-overtime-chart').initEmotionalToneOverTimeChart(data);
         });
       });
       </script>

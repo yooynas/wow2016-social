@@ -1,6 +1,8 @@
 var Promise = require('promise');
 var fs = require('fs');
 
+// Function to find the session info from the wow-session-info db.
+// The index session_id_idx is required.
 exports.findSessionInfo = function(session_id) {
   var ctrl = this;
   var session_info = global['wow-session-infoDB'];
@@ -16,12 +18,14 @@ exports.findSessionInfo = function(session_id) {
     ctrl.findDocByQueryIndex(db_request).then(function(data) {
       fulfill(data.rows[0].doc);
     }, function(err) {
+      console.log(err);
       reject(err);
     });
   });
 
 }
 
+// Function that will find a document in Cloudant based on a Query index
 exports.findDocByQueryIndex = function(db_request) {
   return new Promise(function(fulfill, reject) {
 		try {
@@ -39,20 +43,17 @@ exports.findDocByQueryIndex = function(db_request) {
   });
 }
 
+// Function that will return a grouped view result
 exports.groupDataFromViewPromise = function(db_request) {
 
 	return new Promise(function(fulfill, reject) {
 		try {
-			var read_start = new Date();
 			var params = { group : true }
 			db_request.db_connection.view(db_request.db_design, db_request.db_view , params, function(err, result) {
-				var read_end = new Date();
-				var elapsed = (read_end.getTime() - read_start.getTime()) / 1000;
 				if (err) {
 					console.log(new Date().toISOString() + ' Error reading data from DB ' + err);
 					reject(err);
 				} else {
-					console.log(new Date().toISOString() + ' Read ' + result.rows.length + ' docs in ' + elapsed + ' seconds');
 					fulfill(result.rows);
 				}
 			});
@@ -64,11 +65,11 @@ exports.groupDataFromViewPromise = function(db_request) {
 	});
 }
 
+// Function that reads the documents from a Cloudant View
 exports.readDataFromViewPromise = function(db_request) {
 
 	return new Promise(function(fulfill, reject) {
 		try {
-			var read_start = new Date();
 			var params = { reduce: false, limit: db_request.limit, skip: db_request.skip, descending: false, include_docs : db_request.include_docs };
 			if (db_request.start_key) {
 				params.startkey = db_request.start_key;
@@ -82,13 +83,10 @@ exports.readDataFromViewPromise = function(db_request) {
 				}
 			}
 			db_request.db_connection.view(db_request.db_design, db_request.db_view , params, function(err, result) {
-				var read_end = new Date();
-				var elapsed = (read_end.getTime() - read_start.getTime()) / 1000;
 				if (err) {
 					console.log(new Date().toISOString() + ' Error reading data from DB ' + err);
 					reject(err);
 				} else {
-					console.log(new Date().toISOString() + ' Read ' + result.rows.length + ' docs in ' + elapsed + ' seconds');
 					fulfill(result);
 				}
 			});
@@ -100,6 +98,24 @@ exports.readDataFromViewPromise = function(db_request) {
 	});
 }
 
+// Function that will save a bulk request to Cloudant
+exports.saveBulk = function(db_connection, request) {
+	return new Promise(function(fulfill, reject) {
+		try {
+			db_connection.bulk(request, function(err, result) {
+				if (err) {
+					reject(err);
+				} else {
+					fulfill(result);
+				}
+			});
+		} catch (err) {
+			reject(err);
+		}
+	});
+}
+
+// Function that Checks whether a Cloudant database exist and create it if it doesn't
 exports.checkDB = function(cloudant, db_name) {
 
   return new Promise(function(fulfill, reject) {
@@ -143,24 +159,4 @@ exports.checkDesignDoc = function(db_connection, design_name, design_def) {
     });
   });
 
-}
-
-exports.saveBulk = function(db_connection, request) {
-	return new Promise(function(fulfill, reject) {
-		try {
-			var save_start = new Date();
-			db_connection.bulk(request, function(err, result) {
-				var save_end = new Date();
-				var elapsed = (save_end.getTime() - save_start.getTime()) / 1000;
-				console.log('Bulk saving of ' + request.docs.length + ' docs took ' + elapsed + ' seconds');
-				if (err) {
-					reject(err);
-				} else {
-					fulfill(result);
-				}
-			});
-		} catch (err) {
-			reject(err);
-		}
-	});
 }
