@@ -6,9 +6,12 @@ var Request = require('request');
 module.exports.callNodeRedWebConversation = function(text, user_id) {
 
   var nr_url = global.app_params['node-red-instance-url'];
+  if (!nr_url.endsWith('/')) {
+    nr_url = nr_url + '/';
+  }
   return new Promise(function(fulfill, reject) {
 		try {
-      var url = nr_url + '/web/conversation';
+      var url = nr_url + 'web/conversation';
       var data = {
         text: text,
         user_id : user_id

@@ -1,5 +1,5 @@
 {
-  "cloudant-username" : "4e5ae4e9-85d1-46a1-b611-d59a6c9e82b3-bluemix",
-  "cloudant-password" : "ae1141d59771ff73f0c61edb7d9b1612765c3c8bccca028045407ffd7f0fcfee",
-  "node-red-instance-url" : "https://wow-2016-social.mybluemix.net"
+  "cloudant-username" : "",
+  "cloudant-password" : "",
+  "node-red-instance-url" : ""
 }
